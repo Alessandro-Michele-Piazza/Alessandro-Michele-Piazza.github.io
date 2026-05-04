@@ -1,0 +1,220 @@
+/* Navbar Solida */
+.navbar {
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  padding: clamp(2.5rem, 4vw, 4rem) 0;
+  gap: clamp(2rem, 6vh, 4rem);
+}
+
+.navbar__intro,
+.navbar__menu,
+.navbar__footer {
+  width: min(100%, 28rem);
+}
+
+.navbar__eyebrow {
+  margin-bottom: 1rem;
+  color: var(--teal);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.navbar__title {
+  margin-bottom: 0.85rem;
+  font-size: clamp(2.4rem, 2rem + 1.5vw, 3.7rem);
+  line-height: 1.02;
+  max-width: 12ch;
+}
+
+.navbar__role {
+  margin-bottom: 1.5rem;
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 0.9rem + 0.4vw, 1.2rem);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.navbar__lead {
+  max-width: 32ch;
+  margin: 0;
+  color: var(--silver);
+  font-size: clamp(0.98rem, 0.94rem + 0.2vw, 1.06rem);
+  line-height: 1.85;
+}
+
+.navbar-brand,
+.nav-link {
+  color: var(--silver);
+}
+.navbar-brand:hover,
+.nav-link:hover,
+.nav-link.active {
+  color: var(--white);
+}
+
+.custom-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.custom-menu li {
+  margin-bottom: 0;
+}
+
+.custom-menu li a {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: var(--silver);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: clamp(0.82rem, 0.74rem + 0.28vw, 0.98rem);
+  line-height: 1;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* IL TRATTINO */
+.nav-indicator {
+  height: 1px;
+  width: 2.75rem;
+  flex-shrink: 0;
+  background-color: currentColor;
+  opacity: 0.45;
+  transition:
+    width 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* IL TESTO */
+.nav-text {
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* --- EFFETTO HOVER --- */
+
+/* 1. La linea si allunga e cambia colore */
+.custom-menu li a:hover,
+.custom-menu li a:focus-visible {
+  color: var(--white);
+  transform: translateX(0.2rem);
+}
+
+.custom-menu li a:hover .nav-indicator,
+.custom-menu li a:focus-visible .nav-indicator {
+  width: 4.25rem;
+  opacity: 1;
+  transform: translateX(0.15rem);
+}
+
+/* 2. Il testo cambia colore e (se vuoi) grassetto */
+.custom-menu li a:hover .nav-text,
+.custom-menu li a:focus-visible .nav-text {
+  color: var(--teal);
+  transform: translateX(0.1rem);
+}
+
+/* ICONE SOCIAL */
+
+.navbar__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.navbar__socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+
+.navbar__contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.social-link {
+  color: var(--silver);
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease,
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.social-link:hover,
+.social-link:focus-visible {
+  color: var(--teal);
+  transform: translateY(-2px);
+}
+
+.social-link--icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  border-radius: 999px;
+  background-color: rgba(148, 163, 184, 0.08);
+  backdrop-filter: blur(8px);
+  font-size: 1.2rem;
+}
+
+.social-link--icon:hover,
+.social-link--icon:focus-visible {
+  border-color: rgba(94, 234, 212, 0.45);
+  background-color: rgba(94, 234, 212, 0.08);
+}
+
+.social-link--contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  width: fit-content;
+  font-size: clamp(0.95rem, 0.92rem + 0.12vw, 1.02rem);
+  font-weight: 500;
+}
+
+.social-link--contact i {
+  width: 1.2rem;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--teal);
+}
+
+.social-link--contact span {
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 767.98px) {
+  .navbar {
+    min-height: auto;
+    padding: 2.5rem 0;
+  }
+
+  .navbar__intro,
+  .navbar__menu,
+  .navbar__footer {
+    width: calc(100% - 3rem);
+  }
+
+  .navbar__title,
+  .navbar__lead {
+    max-width: none;
+  }
+}
+
