@@ -1,24 +1,26 @@
 .layout {
   min-height: 100vh;
+  position: relative;
+  isolation: isolate;
   background-color: var(--page-background);
 }
 
 .layout__row {
   min-height: 100vh;
   align-items: flex-start;
-  background-color: var(--page-background);
+  background-color: transparent;
 }
 
 .layout__sidebar {
   position: sticky;
   top: 0;
   height: 100vh;
-  background-color: var(--page-background);
+  background-color: transparent;
 }
 
 .layout__content {
   min-height: 100vh;
-  background-color: var(--page-background);
+  background-color: transparent;
 }
 
 @media (max-width: 767.98px) {
