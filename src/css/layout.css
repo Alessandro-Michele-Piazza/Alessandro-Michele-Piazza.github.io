@@ -26,6 +26,8 @@
 @media (max-width: 767.98px) {
   .layout__sidebar {
     position: static;
-    height: auto;
+    height: 0;
+    z-index: 30;
+    overflow: visible;
   }
 }

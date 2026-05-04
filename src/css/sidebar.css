@@ -3,8 +3,20 @@
   background-color: transparent;
   height: 100%;
   width: 100%;
-  padding: clamp(2.5rem, 4vw, 4rem) 0;
+}
+
+.navbar__desktop-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: clamp(2.5rem, 4vw, 4rem) clamp(2rem, 4vw, 3rem);
   gap: clamp(2rem, 6vh, 4rem);
+}
+
+.navbar__toggle,
+.navbar__mobile-overlay {
+  display: none;
 }
 
 .navbar__intro,
@@ -202,19 +214,176 @@
 
 @media (max-width: 767.98px) {
   .navbar {
-    min-height: auto;
-    padding: 2.5rem 0;
+    height: 0;
+  }
+
+  .navbar__desktop-panel {
+    display: none;
+  }
+
+  .navbar__toggle {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 120;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.32rem;
+    width: 3.35rem;
+    height: 3.35rem;
+    padding: 0;
+    border: 1px solid rgba(94, 234, 212, 0.38);
+    border-radius: 999px;
+    background:
+      radial-gradient(circle at 30% 30%, rgba(94, 234, 212, 0.22), transparent 58%),
+      rgba(15, 23, 42, 0.72);
+    box-shadow: 0 14px 34px rgba(2, 6, 23, 0.34);
+    backdrop-filter: blur(18px);
+    transition:
+      opacity 0.38s ease,
+      transform 0.42s cubic-bezier(0.22, 1, 0.36, 1),
+      border-color 0.3s ease,
+      background-color 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+
+  .navbar__toggle:hover,
+  .navbar__toggle:focus-visible {
+    border-color: rgba(94, 234, 212, 0.62);
+    box-shadow: 0 16px 36px rgba(2, 6, 23, 0.42);
+  }
+
+  .navbar__toggle--hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translate3d(0, -0.8rem, 0) scale(0.78);
+  }
+
+  .navbar__toggle-line {
+    width: 1.1rem;
+    height: 2px;
+    border-radius: 999px;
+    background-color: currentColor;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .navbar__mobile-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 110;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    background: rgba(2, 6, 23, 0.28);
+    backdrop-filter: blur(12px);
+  }
+
+  .navbar__mobile-panel {
+    width: 100%;
+    min-height: 100vh;
+    padding: 6.25rem 1.5rem 2rem;
+    background:
+      radial-gradient(circle at top left, rgba(94, 234, 212, 0.14), transparent 30%),
+      linear-gradient(180deg, rgba(15, 23, 42, 0.985) 0%, rgba(15, 23, 42, 0.97) 100%);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .navbar__mobile-canvas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+    min-height: calc(100vh - 8.25rem);
+  }
+
+  .navbar__mobile-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .navbar__mobile-kicker {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .navbar__mobile-label {
+    color: var(--teal);
+    font-size: 0.76rem;
+    font-weight: 600;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+  }
+
+  .navbar__mobile-hint {
+    max-width: 15rem;
+    color: rgba(148, 163, 184, 0.86);
+    font-size: 0.86rem;
+    line-height: 1.6;
   }
 
   .navbar__intro,
   .navbar__menu,
   .navbar__footer {
-    width: calc(100% - 3rem);
+    width: min(100%, 30rem);
   }
 
   .navbar__title,
   .navbar__lead {
     max-width: none;
+  }
+
+  .navbar__title {
+    font-size: clamp(2.2rem, 9vw, 3.4rem);
+  }
+
+  .navbar__role {
+    font-size: clamp(0.95rem, 3.2vw, 1.15rem);
+  }
+
+  .custom-menu {
+    gap: 1.25rem;
+  }
+
+  .custom-menu li a {
+    width: 100%;
+    font-size: clamp(0.92rem, 3.4vw, 1.05rem);
+    letter-spacing: 0.14em;
+  }
+
+  .nav-indicator {
+    width: 2.1rem;
+  }
+
+  .custom-menu li a:hover .nav-indicator,
+  .custom-menu li a:focus-visible .nav-indicator {
+    width: 3.3rem;
+  }
+
+  .navbar__footer {
+    gap: 1.25rem;
+  }
+
+  .navbar__socials {
+    gap: 0.75rem;
+  }
+
+  .social-link--icon {
+    width: 2.85rem;
+    height: 2.85rem;
+  }
+
+  .social-link--contact {
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    row-gap: 0.35rem;
   }
 }
 

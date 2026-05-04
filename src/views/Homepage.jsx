@@ -1,12 +1,13 @@
 export default function Homepage() {
   return (
     <>
-      <section className="d-flex flex-column align-items-center justify-content-center mt-5">
-        <article>
+      <section className="d-flex flex-column align-items-center justify-content-center">
+        <article id="presentazione">
           <p className="scitta_presentazione">
-            I'm Alessandro Michele Piazza, a Full Stack Web Developer with a
-            background in Computer Science and a passion for creating modern,
-            scalable web applications.
+            I'm Alessandro Michele Piazza, a
+            <strong className="scritta-bianca"> Full Stack Web Developer </strong>
+            with a background in Computer Science and a passion for creating
+            modern, scalable web applications.
             <br />
             <br />
             After graduating in 2017 from I.I.S. Fermi-Guttuso, I worked in
@@ -16,18 +17,28 @@ export default function Homepage() {
             retail at Lidl Italia.
             <br />
             <br />
-            In 2025, I completed an intensive 600+ hour Full Stack Web Developer
+            In 2025, I completed an intensive 600+ hour
+            <strong className="scritta-bianca"> Full Stack Web Developer </strong>
             bootcamp at Aulab Hackademy, working on real projects as a freelance
             developer to gain practical experience.
             <br />
             <br />
-            I've mastered HTML5, CSS3, JavaScript, React, Bootstrap, Tailwind,
-            Laravel, and PHP. I use Git, GitHub, and tools like Microsoft
-            Office, Canva, Trello, and Figma daily.
+            I've mastered <strong className="scritta-bianca">
+              HTML5
+            </strong>, <strong className="scritta-bianca">CSS3</strong>,
+            <strong className="scritta-bianca">JavaScript</strong>,
+            <strong className="scritta-bianca">React</strong>,
+            <strong className="scritta-bianca">Bootstrap</strong>,
+            <strong className="scritta-bianca">Tailwind</strong>,
+            <strong className="scritta-bianca"> Laravel</strong> and
+            <strong className="scritta-bianca"> PHP</strong>.<br /> I use
+            <strong className="scritta-bianca"> Git</strong>,
+            <strong className="scritta-bianca"> GitHub</strong> and tools like
+            Microsoft Office, Canva, Trello, and Figma daily.
             <br />
             <br />
             I combine technical skills with adaptability, problem-solving,
-            communication, and teamwork developed through customer-facing
+            communication and teamwork developed through customer-facing
             experience.
             <br />
             <br />

@@ -1,6 +1,7 @@
 .scitta_presentazione {
-  font-size: clamp(1rem, 1.2vw, 2rem);
+  font-size: clamp(1rem, 1.1vw, 2rem);
   line-height: 1.5;
-  max-width: 40vw;
+  max-width: 45vw;
   color: var(--silver);
+  margin-top: 14vh;
 }
