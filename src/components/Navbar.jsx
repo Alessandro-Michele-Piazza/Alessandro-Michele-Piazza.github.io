@@ -4,7 +4,7 @@ export default function Navbar() {
       <div className="navbar__intro mx-5">
         <p className="navbar__eyebrow">Portfolio</p>
         <h1 className="navbar__title">Alessandro Michele Piazza</h1>
-        <h2 className="navbar__role">Web Developer</h2>
+        <h2 className="navbar__role">Junior Web Developer</h2>
         <p className="navbar__lead">
           Open to new opportunities and collaborations. <br />
           Let&apos;s chat about projects, ideas, or just say hi!
@@ -54,6 +54,17 @@ export default function Navbar() {
           >
             <i className="bi bi-github" aria-hidden="true"></i>
           </a>
+
+          <a
+            className="social-link social-link--icon"
+            href="https://www.instagram.com/alessandrom.piazza/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <i className="bi bi-instagram" aria-hidden="true"></i>
+          </a>
+
         </div>
 
         <div className="navbar__contact-list">
