@@ -1,0 +1,41 @@
+.background-mesh {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: -1;
+  pointer-events: none;
+  background-color: var(--navy);
+  background-image:
+    radial-gradient(
+      circle at 20% 50%,
+      color-mix(in srgb, var(--teal) 15%, transparent),
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      color-mix(in srgb, var(--silver) 10%, transparent),
+      transparent 60%
+    );
+  background-repeat: no-repeat;
+  transform-origin: center;
+  animation: background-mesh-rotate 30s linear infinite;
+  will-change: transform;
+}
+
+@keyframes background-mesh-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .background-mesh {
+    animation: none;
+  }
+}
