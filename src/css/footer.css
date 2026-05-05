@@ -4,14 +4,14 @@
 
 .footer-bottom {
   padding-top: 2rem;
-  border-top: 1px solid rgba(94, 234, 212, 0.1);
+  border-top: 1px solid var(--footer-border);
   text-align: center;
   margin-bottom: 2vh;
 }
 
 .footer-bottom p {
   font-size: 0.9rem;
-  color: var(--silver);
+  color: var(--text-muted);
   margin: 0;
 }
 

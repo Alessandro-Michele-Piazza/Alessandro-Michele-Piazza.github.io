@@ -1,7 +1,7 @@
 
 body {
-  --sb-track-color: #232E33;
-  --sb-thumb-color: #5eead4;
+  --sb-track-color: var(--scrollbar-track);
+  --sb-thumb-color: var(--scrollbar-thumb);
   --sb-size: 10px;
 }
 

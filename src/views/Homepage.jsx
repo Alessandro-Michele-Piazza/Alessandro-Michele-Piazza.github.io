@@ -275,13 +275,15 @@ export default function Homepage() {
             into a polished production-ready experience.
           </p>
         </div>
+
         <div
           className="projects-showcase"
           data-aos="fade-up"
           data-aos-delay="100"
         >
           <article className="project-card">
-            <div className="project-card__media" 
+            <div
+              className="project-card__media"
               data-aos="fade-up"
               data-aos-duration="500"
               data-aos-delay="200"
@@ -301,7 +303,8 @@ export default function Homepage() {
               </a>
             </div>
 
-            <div className="project-card__content"
+            <div
+              className="project-card__content"
               data-aos="fade-up"
               data-aos-duration="500"
               data-aos-delay="300"
@@ -319,12 +322,125 @@ export default function Homepage() {
                 showcase rooms, restaurant, and event services.
               </p>
               <a
-                className="neon-button"
+                className="visit-link visit-link--icon"
                 href="https://www.ilciliegiodelletna.it"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Visit website
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div
+          className="projects-showcase my-5"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <article className="project-card">
+            <div
+              className="project-card__media"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="300"
+            >
+              <a
+                href="https://www.siciliansicily.it/#home"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/siciliansicily_homepage.webp"
+                  alt="Preview of the Sicilian Sicily website"
+                  className="project-card__image"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+            </div>
+
+            <div
+              className="project-card__content"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="300"
+            >
+              <h3 className="project-card__title">Sicilian Sicily</h3>
+              <p className="project-card__text">
+                <strong>Maintenance</strong> and feature enhancement for a
+                tourism platform built with <strong>React</strong>. I integrated
+                a fully functional <strong>mailing form</strong>, performed
+                extensive <strong>bug fixing</strong>, and managed professional{" "}
+                <strong>photo editing</strong> to elevate the site's visual
+                impact. Focused on optimizing <strong>UI components</strong> and
+                ensuring a seamless, high-performance{" "}
+                <strong>user experience</strong>.
+              </p>
+              <a
+                className="visit-link visit-link--icon"
+                href="https://www.siciliansicily.it/#home"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit website
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div
+          className="projects-showcase my-5"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <article className="project-card">
+            <div
+              className="project-card__media"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="300"
+            >
+              <a
+                href="https://github.com/Alessandro-Michele-Piazza/Square-game"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/square games.webp"
+                  alt="Preview of the Square Games website"
+                  className="project-card__image"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+            </div>
+
+            <div
+              className="project-card__content"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="300"
+            >
+              <h3 className="project-card__title">Square Games</h3>
+              <p className="project-card__text">
+                <strong>Full-stack gaming platform</strong> built with{" "}
+                <strong>React</strong> and <strong>Supabase</strong>. Integrated{" "}
+                <strong>RAWG API</strong> for real-time data, implementing{" "}
+                <strong>SQL triggers</strong> for reviews and favorites.
+                Features <strong>user authentication</strong>,{" "}
+                <strong>RLS security</strong>, and{" "}
+                <strong>cloud storage</strong> for profiles. Designed with{" "}
+                <strong>Tailwind CSS</strong> and <strong>daisyUI</strong> for a
+                fully <strong>responsive</strong> experience.
+              </p>
+              <a
+                className="visit-link visit-link--icon"
+                href="https://github.com/Alessandro-Michele-Piazza/Square-game"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Repository
               </a>
             </div>
           </article>

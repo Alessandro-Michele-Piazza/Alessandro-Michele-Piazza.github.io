@@ -47,7 +47,7 @@
 
 .navbar__role {
   margin-bottom: 1.5rem;
-  color: var(--white);
+  color: var(--text-primary);
   font-family: var(--font-body);
   font-size: clamp(1rem, 0.9rem + 0.4vw, 1.2rem);
   font-weight: 600;
@@ -58,19 +58,19 @@
 .navbar__lead {
   max-width: 32ch;
   margin: 0;
-  color: var(--silver);
+  color: var(--text-muted);
   font-size: clamp(0.98rem, 0.94rem + 0.2vw, 1.06rem);
   line-height: 1.85;
 }
 
 .navbar-brand,
 .nav-link {
-  color: var(--silver);
+  color: var(--link-color);
 }
 .navbar-brand:hover,
 .nav-link:hover,
 .nav-link.active {
-  color: var(--white);
+  color: var(--link-hover);
 }
 
 .custom-menu {
@@ -91,13 +91,15 @@
   align-items: center;
   gap: 1rem;
   text-decoration: none;
-  color: var(--silver);
+  color: var(--link-color);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.18em;
   font-size: clamp(0.74rem, 0.7rem + 0.2vw, 0.88rem);
   line-height: 1;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
 /* IL TRATTINO */
@@ -116,7 +118,9 @@
 /* IL TESTO */
 .nav-text {
   display: inline-block;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
 /* --- EFFETTO HOVER --- */
@@ -124,7 +128,7 @@
 /* 1. La linea si allunga e cambia colore */
 .custom-menu li a:hover,
 .custom-menu li a:focus-visible {
-  color: var(--white);
+  color: var(--link-hover);
   transform: translateX(0.2rem);
 }
 
@@ -165,7 +169,7 @@
 }
 
 .social-link {
-  color: var(--silver);
+  color: var(--text-muted);
   transition:
     color 0.3s ease,
     border-color 0.3s ease,
@@ -185,17 +189,18 @@
   justify-content: center;
   width: 3rem;
   height: 3rem;
-  border: 1px solid rgba(148, 163, 184, 0.28);
+  border: 1px solid var(--icon-link-border);
   border-radius: 999px;
-  background-color: rgba(148, 163, 184, 0.08);
+  background-color: var(--icon-link-background);
+  box-shadow: var(--surface-shadow);
   backdrop-filter: blur(8px);
   font-size: 1.2rem;
 }
 
 .social-link--icon:hover,
 .social-link--icon:focus-visible {
-  border-color: rgba(94, 234, 212, 0.45);
-  background-color: rgba(94, 234, 212, 0.08);
+  border-color: var(--icon-link-hover-border);
+  background-color: var(--icon-link-hover-background);
 }
 
 .social-link--contact {
@@ -218,7 +223,7 @@
   letter-spacing: 0.01em;
 }
 
-.img-profilo{
+.img-profilo {
   width: 8rem;
   height: 8rem;
   border-radius: 999px;
@@ -229,8 +234,8 @@
   .navbar {
     height: 0;
     min-height: 0;
-    padding: 0;        /* ← Aggiungi */
-    margin: 0;         /* ← Aggiungi */
+    padding: 0; /* ← Aggiungi */
+    margin: 0; /* ← Aggiungi */
   }
 
   .navbar__desktop-panel {
@@ -250,12 +255,11 @@
     width: 3.35rem;
     height: 3.35rem;
     padding: 0;
-    border: 1px solid rgba(94, 234, 212, 0.38);
+    border: 1px solid var(--mobile-toggle-border);
     border-radius: 999px;
-    background:
-      radial-gradient(circle at 30% 30%, rgba(94, 234, 212, 0.22), transparent 58%),
-      rgba(15, 23, 42, 0.72);
-    box-shadow: 0 14px 34px rgba(2, 6, 23, 0.34);
+    background: var(--mobile-toggle-background);
+    box-shadow: var(--mobile-toggle-shadow);
+    color: var(--teal); /* Aggiungi questo per il colore dell'icona */
     backdrop-filter: blur(18px);
     transition:
       opacity 0.38s ease,
@@ -267,8 +271,8 @@
 
   .navbar__toggle:hover,
   .navbar__toggle:focus-visible {
-    border-color: rgba(94, 234, 212, 0.62);
-    box-shadow: 0 16px 36px rgba(2, 6, 23, 0.42);
+    border-color: var(--mobile-toggle-hover-border);
+    box-shadow: var(--mobile-toggle-hover-shadow);
   }
 
   .navbar__toggle--hidden {
@@ -282,7 +286,9 @@
     height: 2px;
     border-radius: 999px;
     background-color: currentColor;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
   }
 
   .navbar__mobile-overlay {
@@ -292,7 +298,7 @@
     display: flex;
     align-items: stretch;
     justify-content: stretch;
-    background: rgba(2, 6, 23, 0.28);
+    background: var(--mobile-overlay-background);
     backdrop-filter: blur(12px);
   }
 
@@ -300,9 +306,7 @@
     width: 100%;
     min-height: 100vh;
     padding: 6.25rem 1.5rem 2rem;
-    background:
-      radial-gradient(circle at top left, rgba(94, 234, 212, 0.14), transparent 30%),
-      linear-gradient(180deg, rgba(15, 23, 42, 0.985) 0%, rgba(15, 23, 42, 0.97) 100%);
+    background: var(--mobile-panel-background);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
   }
@@ -336,10 +340,11 @@
     width: 2.75rem;
     height: 2.75rem;
     padding: 0;
-    border: 1px solid rgba(148, 163, 184, 0.28);
+    border: 1px solid var(--icon-link-border);
     border-radius: 999px;
-    background-color: rgba(148, 163, 184, 0.08);
-    color: var(--white);
+    background-color: var(--icon-link-background);
+    color: var(--text-primary);
+    box-shadow: var(--surface-shadow);
     font-size: 1rem;
     font-weight: 700;
     line-height: 1;
@@ -352,8 +357,8 @@
 
   .navbar__mobile-close:hover,
   .navbar__mobile-close:focus-visible {
-    border-color: rgba(94, 234, 212, 0.45);
-    background-color: rgba(94, 234, 212, 0.08);
+    border-color: var(--icon-link-hover-border);
+    background-color: var(--icon-link-hover-background);
     color: var(--teal);
     transform: translateY(-1px);
   }
@@ -424,4 +429,3 @@
     row-gap: 0.35rem;
   }
 }
-

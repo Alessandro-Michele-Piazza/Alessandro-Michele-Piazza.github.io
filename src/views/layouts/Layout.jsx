@@ -1,6 +1,7 @@
 import { Outlet } from "react-router";
 import Background from "../../components/Background";
 import CursorGlow from "../../components/Cursor-glow";
+import DarkModeToggle from "../../components/DarkModeToggle";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
@@ -8,6 +9,7 @@ import Footer from "../../components/Footer";
 export default function Layout() {
   return (
     <main className="container-fluid layout ps-0">
+      <DarkModeToggle />
       <Background />
       <CursorGlow />
       <section className="row layout__row">

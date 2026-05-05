@@ -29,14 +29,14 @@
 /* Section title */
 .homepage__skills-title {
   font-size: clamp(1.6rem, 1.2rem + 1.2vw, 2.4rem);
-  color: var(--white);
+  color: var(--text-primary);
   margin-bottom: 0.6rem;
   line-height: 1.15;
 }
 
 /* Subtitle */
 .skills__subtitle {
-  color: var(--silver);
+  color: var(--text-muted);
   font-size: clamp(0.95rem, 0.9rem + 0.2vw, 1.05rem);
   max-width: 52ch;
   margin: 0 auto;
@@ -53,10 +53,11 @@
 
 /* ── Card ── */
 .skill-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--surface-background);
+  border: 1px solid var(--surface-border);
   border-radius: 1rem;
   padding: 1.75rem;
+  box-shadow: var(--surface-shadow);
   transition:
     border-color 0.35s ease,
     box-shadow 0.35s ease,
@@ -69,8 +70,8 @@
 }
 
 .skill-card:hover {
-  border-color: rgba(94, 234, 212, 0.35);
-  box-shadow: 0 8px 32px rgba(94, 234, 212, 0.07);
+  border-color: var(--surface-hover-border);
+  box-shadow: var(--surface-hover-shadow);
   transform: translateY(-4px);
 }
 
@@ -91,8 +92,8 @@
   width: 2.4rem;
   height: 2.4rem;
   border-radius: 0.6rem;
-  background: rgba(94, 234, 212, 0.1);
-  border: 1px solid rgba(94, 234, 212, 0.18);
+  background: var(--accent-soft-background);
+  border: 1px solid var(--accent-soft-border);
   color: var(--teal);
   font-size: 1.1rem;
   flex-shrink: 0;
@@ -102,8 +103,8 @@
 }
 
 .skill-card:hover .skill-card__icon {
-  background: rgba(94, 234, 212, 0.18);
-  border-color: rgba(94, 234, 212, 0.4);
+  background: var(--accent-soft-background-strong);
+  border-color: var(--accent-soft-border-strong);
 }
 
 .skill-card__title {
@@ -111,7 +112,7 @@
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--white);
+  color: var(--text-primary);
   margin: 0;
 }
 
@@ -134,9 +135,9 @@
   border-radius: 50px;
   font-size: 0.84rem;
   font-weight: 500;
-  color: var(--silver);
-  background: rgba(148, 163, 184, 0.07);
-  border: 1px solid rgba(148, 163, 184, 0.14);
+  color: var(--text-muted);
+  background: var(--chip-background);
+  border: 1px solid var(--chip-border);
   transition:
     color 0.25s ease,
     background 0.25s ease,
@@ -151,20 +152,20 @@
 }
 
 .skill-list__item:hover {
-  color: var(--white);
-  background: rgba(94, 234, 212, 0.1);
-  border-color: rgba(94, 234, 212, 0.38);
+  color: var(--text-primary);
+  background: var(--chip-hover-background);
+  border-color: var(--chip-hover-border);
   transform: scale(1.06);
 }
 
 .skill-list__item:hover i {
-  color: var(--white);
+  color: var(--text-primary);
 }
 
 .skill-icon {
   font-size: 22px;
   min-width: 22px;
-  color: #94a3b8;
+  color: var(--text-muted);
   transition: all 0.3s ease;
 }
 

@@ -18,7 +18,9 @@
 .project-card__media {
   overflow: hidden;
   border-radius: 0.75rem;
-  border: 1px solid rgba(148, 163, 184, 0.12);
+  border: 1px solid var(--surface-border);
+  background: var(--surface-background);
+  box-shadow: var(--surface-shadow);
   aspect-ratio: 16 / 10;
 }
 
@@ -50,13 +52,13 @@
 
 .project-card__text {
   margin: 0;
-  color: var(--silver);
+  color: var(--text-muted);
   font-size: 1rem;
   line-height: 1.75;
 }
 
 .project-card__text strong {
-  color: var(--white);
+  color: var(--text-primary);
   font-weight: 600;
 }
 
@@ -66,10 +68,11 @@
   justify-content: center;
   padding: 0.65rem 1.4rem;
   border-radius: 999px;
-  border: 1px solid rgba(94, 234, 212, 0.4);
+  border: 1px solid var(--project-cta-border);
   color: var(--teal);
   font-size: 0.9rem;
   font-weight: 600;
+  box-shadow: var(--button-hover-shadow);
   transition:
     background 0.25s ease,
     color 0.25s ease,
@@ -77,9 +80,9 @@
 }
 
 .project-card__cta:hover {
-  background: rgba(94, 234, 212, 0.1);
+  background: var(--project-cta-hover-background);
   color: var(--teal);
-  border-color: rgba(94, 234, 212, 0.7);
+  border-color: var(--project-cta-hover-border);
 }
 
 @media (max-width: 767.98px) {

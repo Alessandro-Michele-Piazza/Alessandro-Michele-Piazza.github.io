@@ -18,13 +18,6 @@
 
 /* === Variabili === */
 :root {
-  --dark: #353535;
-  --teal: #5eead4;
-  --white: #e2e8f0;
-  --silver: #94a3b8;
-  --navy: #0f172a;
-  --page-background: #0f172a;
-
   --font-headings: "Space Grotesk", sans-serif;
   --font-body: "Plus Jakarta Sans", sans-serif;
 
@@ -35,7 +28,7 @@
 body {
   min-height: 100vh;
   font-family: var(--font-body);
-  color: var(--white);
+  color: var(--text-primary);
   background-color: var(--page-background);
 }
 
@@ -53,7 +46,7 @@ h5,
 h6 {
   font-family: var(--font-headings);
   font-weight: 700;
-  color: var(--white);
+  color: var(--text-primary);
 }
 
 p {
@@ -63,13 +56,13 @@ p {
 
 /* === Link === */
 a {
-  color: var(--silver);
+  color: var(--link-color);
   text-decoration: none;
   transition: color var(--transition);
 }
 
 a:hover {
-  color: var(--white);
+  color: var(--link-hover);
 }
 
 /* ============================================================
@@ -77,7 +70,7 @@ a:hover {
    ============================================================ */
 
 .scritta-bianca {
-  color: var(--white);
+  color: var(--text-primary);
 }
 .scritta-navy {
   color: var(--navy);
@@ -87,10 +80,10 @@ a:hover {
 }
 
 .scritta-silver {
-  color: var(--silver);
+  color: var(--text-muted);
 }
 .scritta-silver:hover {
-  color: var(--white);
+  color: var(--link-hover);
 }
 
 .scritta-teal {

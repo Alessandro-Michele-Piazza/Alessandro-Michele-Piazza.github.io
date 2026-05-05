@@ -6,7 +6,7 @@
   height: 200%;
   z-index: -1;
   pointer-events: none;
-  background-color: var(--navy);
+  background-color: var(--page-background);
   background-image:
     radial-gradient(
       circle at 20% 50%,

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { HiMenuAlt3 } from "react-icons/hi";  
 
 const DESKTOP_MEDIA_QUERY = "(min-width: 768px)";
 const NAV_ITEMS = [
@@ -221,9 +222,7 @@ export default function Navbar() {
         }
         onClick={toggleMenu}
       >
-        <span className="navbar__toggle-line"></span>
-        <span className="navbar__toggle-line"></span>
-        <span className="navbar__toggle-line"></span>
+        <HiMenuAlt3 size={24} aria-hidden="true" />
       </button>
 
       <div className="navbar__desktop-panel">
