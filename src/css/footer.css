@@ -1,0 +1,35 @@
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+.footer-bottom {
+  padding-top: 2rem;
+  border-top: 1px solid rgba(94, 234, 212, 0.1);
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+  color: var(--silver);
+  margin: 0;
+}
+
+.footer-bottom a {
+  color: var(--teal);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 0 1rem;
+  }
+}

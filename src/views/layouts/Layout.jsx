@@ -1,6 +1,8 @@
 import { Outlet } from "react-router";
 import CursorGlow from "../../components/Cursor-glow";
 import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+
 
 export default function Layout() {
   return (
@@ -14,6 +16,7 @@ export default function Layout() {
           <Outlet />
         </article>
       </section>
+      <Footer />
     </main>
   );
 }

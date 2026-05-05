@@ -46,10 +46,9 @@ function NavigationSections({ onNavigate, animated = false }) {
         <h2 className="navbar__role mt-4">Junior Web Developer</h2>
         <p className="navbar__lead">
           Open to new opportunities and collaborations. <br />
-          Let&apos;s chat about projects, ideas, or just say hi!
         </p>
       </div>
-    
+
       <div className="menu-container navbar__menu" {...menuAnimationProps}>
         <ul className="custom-menu">
           {NAV_ITEMS.map((item, index) => {
@@ -123,18 +122,19 @@ function NavigationSections({ onNavigate, animated = false }) {
             <span>alexpiazza98@gmail.com</span>
           </a>
 
-          <a 
-            className="social-link social-link--contact mb-5"
+          <a
+            className="social-link social-link--contact"
             href="tel:+393491378265"
             onClick={onNavigate}
           >
             <i className="bi bi-telephone-fill " aria-hidden="true"></i>
-            <span >+39 349 137 8265</span>
+            <span>+39 349 137 8265</span>
           </a>
         </div>
       </div>
     </>
-  );}
+  );
+}
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

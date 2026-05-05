@@ -7,12 +7,28 @@
   margin-top: 10vh;
 }
 
-.homepage__summary-title {
-  margin: 0 0 2rem;
-  color: var(--white);
-  font-size: clamp(1.45rem, 1rem + 1vw, 2rem);
+.homepage__summary-intro {
+  width: min(100%, 45rem);
+  margin: 0 auto 2.75rem;
+  text-align: center;
+}
+
+.homepage__summary-eyebrow {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: var(--teal);
+  font-size: 0.78rem;
   font-weight: 700;
-  line-height: 1.2;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.homepage__summary-title {
+  margin: 0;
+  color: var(--white);
+  font-size: clamp(1.6rem, 1.2rem + 1.2vw, 2.4rem);
+  font-weight: 700;
+  line-height: 1.15;
 }
 
 .scitta_presentazione {
@@ -36,8 +52,12 @@
     box-sizing: border-box;
   }
 
+  .homepage__summary-intro {
+    width: 100%;
+    margin-bottom: 1.75rem;
+  }
+
   .homepage__summary-title {
-    margin-bottom: 1rem;
     font-size: clamp(1.5rem, 6vw, 2rem);
   }
 
