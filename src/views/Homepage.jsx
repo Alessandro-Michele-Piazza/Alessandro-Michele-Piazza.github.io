@@ -1,10 +1,11 @@
 export default function Homepage() {
   return (
     <>
-      <section className="d-flex flex-column align-items-center justify-content-center">
-        <article id="presentazione">
+      <section className="homepage__summary d-flex flex-column align-items-center justify-content-center">
+        <article id="presentazione" className="homepage__summary-card">
+          <h2 className="homepage__summary-title">Professional Summary</h2>
           <p className="scitta_presentazione">
-            I'm Alessandro Michele Piazza, a
+            I'm Alessandro Michele Piazza a
             <strong className="scritta-bianca"> Full Stack Web Developer </strong>
             with a background in Computer Science and a passion for creating
             modern, scalable web applications.

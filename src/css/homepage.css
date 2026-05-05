@@ -1,7 +1,48 @@
+.homepage__summary {
+  width: 100%;
+}
+
+.homepage__summary-card {
+  width: min(100%, 45vw);
+  margin-top: 14vh;
+}
+
+.homepage__summary-title {
+  margin: 0 0 1.25rem;
+  color: var(--white);
+  font-size: clamp(1.45rem, 1rem + 1vw, 2rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
 .scitta_presentazione {
   font-size: clamp(1rem, 1.1vw, 2rem);
   line-height: 1.5;
-  max-width: 45vw;
+  max-width: none;
   color: var(--silver);
-  margin-top: 14vh;
+  margin: 0;
+}
+
+@media (max-width: 767.98px) {
+  .homepage__summary {
+    align-items: stretch !important;
+  }
+
+  .homepage__summary-card {
+    width: 100%;
+    max-width: 42rem;
+    margin-top: 5.5rem;
+    padding-inline: 1.25rem;
+    box-sizing: border-box;
+  }
+
+  .homepage__summary-title {
+    margin-bottom: 1rem;
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+
+  .scitta_presentazione {
+    font-size: clamp(1rem, 4vw, 1.1rem);
+    line-height: 1.75;
+  }
 }

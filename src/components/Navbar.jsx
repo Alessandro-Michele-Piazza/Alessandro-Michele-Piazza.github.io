@@ -232,11 +232,17 @@ export default function Navbar() {
                 event.stopPropagation();
               }}
             >
-              <div className="navbar__mobile-header" data-aos="fade-down" data-aos-duration="400">
-                <div className="navbar__mobile-kicker">
-                  <span className="navbar__mobile-label">Navigation</span>
-                  <span className="navbar__mobile-hint">Tap outside or choose a section to close.</span>
-                </div>
+              <div className="navbar__mobile-header " data-aos="fade-down" data-aos-duration="400">
+                
+
+                <button
+                  type="button"
+                  className="navbar__mobile-close"
+                  onClick={closeMenu}
+                  aria-label="Close navigation menu"
+                >
+                  <span aria-hidden="true">X</span>
+                </button>
               </div>
 
               <NavigationSections onNavigate={closeMenu} animated />
