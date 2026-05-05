@@ -8,11 +8,11 @@ import Footer from "../../components/Footer";
 
 export default function Layout() {
   return (
-    <main className="container-fluid layout ps-0">
+    <main className="container-fluid layout px-0">
       <DarkModeToggle />
       <Background />
       <CursorGlow />
-      <section className="row layout__row">
+      <section className="row g-0 layout__row">
         <article className="col-12 col-md-4 layout__sidebar">
           <Navbar />
         </article>

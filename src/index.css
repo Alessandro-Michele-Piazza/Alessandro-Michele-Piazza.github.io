@@ -23,6 +23,14 @@
   --transition: 0.2s ease; /* Transizione rapida solo per i colori */
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
 /* === Sfondo Statico === */
 body {
   min-height: 100vh;

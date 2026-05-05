@@ -130,7 +130,7 @@ export default function Homepage() {
         </article>
       </section>
 
-      <section className="homepage__summary d-flex d-md-none flex-column align-items-center justify-content-center px-3">
+      <section className="homepage__summary d-flex d-md-none flex-column align-items-center justify-content-center">
         <article id="presentazione-mobile" className="homepage__summary-card">
           <div
             className="homepage__summary-intro text-center"
@@ -340,7 +340,7 @@ export default function Homepage() {
           </p>
         </div>
 
-        <div className="aos-overflow-wrapper">
+        <div className="projects-showcase aos-overflow-wrapper">
           {/* PROGETTO 1 */}
           <article className="project-card">
             <div

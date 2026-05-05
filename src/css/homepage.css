@@ -46,11 +46,11 @@
   }
 
   .homepage__summary-card {
-    width: 95%;
+    width: min(100% - 2rem, 42rem);
     max-width: 42rem;
+    margin-inline: auto;
     margin-top: 1rem;
     padding-inline: 1.25rem;
-    box-sizing: border-box;
     margin-bottom: 10vh;
   }
 
