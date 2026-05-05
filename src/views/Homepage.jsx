@@ -45,7 +45,12 @@ export default function Homepage() {
             <h2 className="homepage__summary-title">Professional Summary</h2>
           </div>
 
-          <p className="scitta_presentazione">
+          <p
+            className="scitta_presentazione"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100"
+          >
             I'm Alessandro Michele Piazza a
             <strong className="scritta-bianca">
               {" "}
@@ -53,15 +58,27 @@ export default function Homepage() {
             </strong>
             with a background in Computer Science and a passion for creating
             modern, scalable web applications.
-            <br />
-            <br />
+          </p>
+
+          <p
+            className="scitta_presentazione"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="200"
+          >
             After graduating in 2017 from I.I.S. Fermi-Guttuso, I worked in
             customer-focused environments. From 2020 to 2024, I was a
             Receptionist and IT Operator at Il Ciliegio dell'Etna, managing
             databases and resolving technical issues, while also working in
             retail at Lidl Italia.
-            <br />
-            <br />
+          </p>
+
+          <p
+            className="scitta_presentazione"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="300"
+          >
             In 2025, I completed an intensive 600+ hour
             <strong className="scritta-bianca">
               {" "}
@@ -69,27 +86,44 @@ export default function Homepage() {
             </strong>
             bootcamp at Aulab Hackademy, working on real projects as a freelance
             developer to gain practical experience.
-            <br />
-            <br />
-            I've mastered <strong className="scritta-bianca">
-              HTML5
-            </strong>, <strong className="scritta-bianca">CSS3</strong>,
-            <strong className="scritta-bianca">JavaScript</strong>,
-            <strong className="scritta-bianca">React</strong>,
-            <strong className="scritta-bianca">Bootstrap</strong>,
-            <strong className="scritta-bianca">Tailwind</strong>,
-            <strong className="scritta-bianca"> Laravel</strong> and
-            <strong className="scritta-bianca"> PHP</strong>.<br /> I use
-            <strong className="scritta-bianca"> Git</strong>,
-            <strong className="scritta-bianca"> GitHub</strong> and tools like
+          </p>
+
+          <p
+            className="scitta_presentazione"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="400"
+          >
+            I've mastered <strong className="scritta-bianca">HTML5</strong>,{" "}
+            <strong className="scritta-bianca">CSS3</strong>,{" "}
+            <strong className="scritta-bianca">JavaScript</strong>,{" "}
+            <strong className="scritta-bianca">React</strong>,{" "}
+            <strong className="scritta-bianca">Bootstrap</strong>,{" "}
+            <strong className="scritta-bianca">Tailwind</strong>,{" "}
+            <strong className="scritta-bianca">Laravel</strong> and{" "}
+            <strong className="scritta-bianca">PHP</strong>. I use{" "}
+            <strong className="scritta-bianca">Git</strong>,{" "}
+            <strong className="scritta-bianca">GitHub</strong> and tools like
             Microsoft Office, Canva, Trello, and Figma daily.
-            <br />
-            <br />
+          </p>
+
+          <p
+            className="scitta_presentazione"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="500"
+          >
             I combine technical skills with adaptability, problem-solving,
             communication and teamwork developed through customer-facing
             experience.
-            <br />
-            <br />
+          </p>
+
+          <p
+            className="scitta_presentazione"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="600"
+          >
             I'm seeking a full-time position to grow professionally and
             contribute to innovative web development projects.
           </p>
@@ -201,14 +235,16 @@ export default function Homepage() {
 
             <ul className="skill-list">
               <li className="skill-list__item">
-                <MdAutorenew className="soft-skill-icon" /> <span>Adaptability</span>
+                <MdAutorenew className="soft-skill-icon" />{" "}
+                <span>Adaptability</span>
               </li>
               <li className="skill-list__item">
                 <MdLightbulb className="soft-skill-icon" />{" "}
                 <span>Problem Solving</span>
               </li>
               <li className="skill-list__item">
-                <MdChat className="soft-skill-icon" /> <span>Communication</span>
+                <MdChat className="soft-skill-icon" />{" "}
+                <span>Communication</span>
               </li>
               <li className="skill-list__item">
                 <MdGroups className="soft-skill-icon" /> <span>Teamwork</span>
@@ -218,7 +254,8 @@ export default function Homepage() {
                 <span>Italian — Native</span>
               </li>
               <li className="skill-list__item">
-                <MdTranslate className="soft-skill-icon" /> <span>English — B1</span>
+                <MdTranslate className="soft-skill-icon" />{" "}
+                <span>English — B1</span>
               </li>
             </ul>
           </div>
