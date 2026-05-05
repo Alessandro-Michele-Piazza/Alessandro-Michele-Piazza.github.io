@@ -451,7 +451,7 @@ export default function Homepage() {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="/square games.webp"
+                  src="/square_games.webp"
                   alt="Preview of the Square Games website"
                   className="project-card__image"
                   loading="lazy"
