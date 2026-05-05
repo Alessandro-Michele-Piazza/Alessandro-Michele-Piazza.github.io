@@ -28,6 +28,6 @@
     position: static;
     height: 0;
     z-index: 30;
-    overflow: visible;
+    min-height: 7vh;
   }
 }
