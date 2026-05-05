@@ -11,7 +11,7 @@
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;
-  color: var(--white);
+  color: var(--silver); /* Testo chiaro su fondo scuro per contrasto */
   
   background: transparent;
   cursor: pointer;
