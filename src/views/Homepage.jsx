@@ -340,13 +340,14 @@ export default function Homepage() {
           </p>
         </div>
 
-        {/* Progetto 1 */}
-        <div className="projects-showcase">
+        {/* Wrapper di sicurezza per isolare l'overflow delle animazioni */}
+        <div className="aos-overflow-wrapper">
+          {/* PROGETTO 1 */}
           <article className="project-card">
             <div
               className="project-card__media"
-              data-aos="fade-up"
-              data-aos-duration="600"
+              data-aos="fade-right"
+              data-aos-duration="800"
             >
               <a
                 href="https://www.ilciliegiodelletna.it"
@@ -358,16 +359,14 @@ export default function Homepage() {
                   alt="Preview of the Il Ciliegio dell'Etna website"
                   className="project-card__image"
                   loading="lazy"
-                  decoding="async"
                 />
               </a>
             </div>
 
             <div
               className="project-card__content"
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-delay="100"
+              data-aos="fade-left"
+              data-aos-duration="800"
             >
               <h3 className="project-card__title">Il Ciliegio dell'Etna</h3>
               <p className="project-card__text">
@@ -391,15 +390,13 @@ export default function Homepage() {
               </a>
             </div>
           </article>
-        </div>
 
-        {/* Progetto 2 */}
-        <div className="projects-showcase my-5">
-          <article className="project-card">
+          {/* PROGETTO 2 */}
+          <article className="project-card my-5">
             <div
               className="project-card__media"
-              data-aos="fade-up"
-              data-aos-duration="600"
+              data-aos="fade-right"
+              data-aos-duration="800"
             >
               <a
                 href="https://www.siciliansicily.it/#home"
@@ -411,16 +408,14 @@ export default function Homepage() {
                   alt="Preview of the Sicilian Sicily website"
                   className="project-card__image"
                   loading="lazy"
-                  decoding="async"
                 />
               </a>
             </div>
 
             <div
               className="project-card__content"
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-delay="100"
+              data-aos="fade-left"
+              data-aos-duration="800"
             >
               <h3 className="project-card__title">Sicilian Sicily</h3>
               <p className="project-card__text">
@@ -443,15 +438,13 @@ export default function Homepage() {
               </a>
             </div>
           </article>
-        </div>
 
-        {/* Progetto 3 */}
-        <div className="projects-showcase my-5">
-          <article className="project-card">
+          {/* PROGETTO 3 */}
+          <article className="project-card my-5">
             <div
               className="project-card__media"
-              data-aos="fade-up"
-              data-aos-duration="600"
+              data-aos="fade-right"
+              data-aos-duration="800"
             >
               <a
                 href="https://github.com/Alessandro-Michele-Piazza/Square-game"
@@ -463,16 +456,14 @@ export default function Homepage() {
                   alt="Preview of the Square Games website"
                   className="project-card__image"
                   loading="lazy"
-                  decoding="async"
                 />
               </a>
             </div>
 
             <div
               className="project-card__content"
-              data-aos="fade-up"
-              data-aos-duration="600"
-              data-aos-delay="100"
+              data-aos="fade-left"
+              data-aos-duration="800"
             >
               <h3 className="project-card__title">Square Games</h3>
               <p className="project-card__text">

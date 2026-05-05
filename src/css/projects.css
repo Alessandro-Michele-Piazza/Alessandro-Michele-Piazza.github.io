@@ -85,7 +85,42 @@
   border-color: var(--project-cta-hover-border);
 }
 
-@media (max-width: 767.98px) {
+/* Questo wrapper isola le animazioni AOS senza rompere lo sticky della nav */
+.aos-overflow-wrapper {
+  overflow-x: clip; /* Taglia l'eccedenza orizzontale senza creare un contenitore di scroll */
+  display: flex;
+  flex-direction: column;
+  gap: 3rem; /* Spazio tra i progetti su mobile */
+  padding: 1rem 0;
+}
+
+/* Compattezza su Mobile */
+@media (max-width: 768px) {
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.02); /* Sottile stacco visivo */
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .project-card__media {
+    margin-bottom: 1rem;
+  }
+
+  .project-card__title {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .project-card__text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #e0e0e0; /* Leggermente più chiaro per contrasto */
+  }
+
   .projects-showcase {
     width: 100%;
   }
