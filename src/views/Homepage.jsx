@@ -34,7 +34,7 @@ import {
 export default function Homepage() {
   return (
     <>
-      <section className="homepage__summary d-flex flex-column align-items-center justify-content-center">
+      <section className="homepage__summary d-none d-md-flex flex-column align-items-center justify-content-center">
         <article id="presentazione" className="homepage__summary-card">
           <div
             className="homepage__summary-intro"
@@ -126,6 +126,70 @@ export default function Homepage() {
           >
             I'm seeking a full-time position to grow professionally and
             contribute to innovative web development projects.
+          </p>
+        </article>
+      </section>
+
+      <section className="homepage__summary d-flex d-md-none flex-column align-items-center justify-content-center px-3">
+        <article id="presentazione-mobile" className="homepage__summary-card">
+          <div
+            className="homepage__summary-intro text-center"
+            data-aos="fade-up"
+            data-aos-duration="600"
+          >
+            <span className="homepage__summary-eyebrow">About me</span>
+            <h2 className="homepage__summary-title">Professional Summary</h2>
+          </div>
+
+          <p
+            className="scitta_presentazione text-center"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="100"
+          >
+            I'm Alessandro Michele Piazza, a
+            <strong className="scritta-bianca">
+              {" "}
+              Full Stack Web Developer{" "}
+            </strong>
+            passionate about building modern and scalable applications.
+          </p>
+
+          <p
+            className="scitta_presentazione text-center"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="200"
+          >
+            With a background in Computer Science and an intensive 600+ hour
+            bootcamp at
+            <strong className="scritta-bianca"> Aulab Hackademy</strong>, I've
+            mastered technologies like{" "}
+            <strong className="scritta-bianca">
+              React, JavaScript, Laravel and PHP
+            </strong>
+            .
+          </p>
+
+          <p
+            className="scitta_presentazione text-center"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="300"
+          >
+            I combine technical expertise with strong problem-solving and
+            communication skills gained through years of professional
+            experience.
+          </p>
+
+          <p
+            className="scitta_presentazione text-center"
+            data-aos="fade-up"
+            data-aos-duration="600"
+            data-aos-delay="400"
+          >
+            I'm now ready to contribute to innovative projects and grow in a
+            dynamic tech team.
           </p>
         </article>
       </section>
