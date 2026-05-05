@@ -340,7 +340,6 @@ export default function Homepage() {
           </p>
         </div>
 
-        {/* Wrapper di sicurezza per isolare l'overflow delle animazioni */}
         <div className="aos-overflow-wrapper">
           {/* PROGETTO 1 */}
           <article className="project-card">
@@ -452,7 +451,7 @@ export default function Homepage() {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="/square_games.webp"
+                  src="/square games.webp"
                   alt="Preview of the Square Games website"
                   className="project-card__image"
                   loading="lazy"
