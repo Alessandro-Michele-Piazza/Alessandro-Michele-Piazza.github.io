@@ -60,7 +60,7 @@
   color: var(--text-muted, #ccc);
   font-size: 1rem;
   line-height: 1.75;
-  margin-right: 2vw; /* Spazio extra a destra per evitare che il testo tocchi il bordo del contenitore */
+  margin-right: 0; /* Spazio extra a destra per evitare che il testo tocchi il bordo del contenitore */
 }
 
 /* --- IL BOTTONE (Aumentata specificità per vincere i conflitti) --- */

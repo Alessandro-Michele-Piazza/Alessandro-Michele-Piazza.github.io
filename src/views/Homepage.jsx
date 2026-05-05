@@ -334,7 +334,7 @@ export default function Homepage() {
         >
           <span className="skills__eyebrow">My projects</span>
           <h2 className="homepage__skills-title">Projects & Experience</h2>
-          <p className="skills__subtitle">
+          <p className="skills__subtitle mx-3">
             A curated case study that shows how I turn design and development
             into a polished production-ready experience.
           </p>

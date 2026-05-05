@@ -39,7 +39,7 @@
   color: var(--text-muted);
   font-size: clamp(0.95rem, 0.9rem + 0.2vw, 1.05rem);
   max-width: 52ch;
-  margin: 0 auto;
+  margin: 0 4rem;
 }
 
 /* ── Grid container ── */
