@@ -261,6 +261,75 @@ export default function Homepage() {
           </div>
         </div>
       </section>
+
+      <section id="projects" className="homepage__skills homepage__projects">
+        <div
+          className="skills__intro"
+          data-aos="fade-up"
+          data-aos-duration="600"
+        >
+          <span className="skills__eyebrow">My projects</span>
+          <h2 className="homepage__skills-title">Projects & Experience</h2>
+          <p className="skills__subtitle">
+            A curated case study that shows how I turn design and development
+            into a polished production-ready experience.
+          </p>
+        </div>
+        <div
+          className="projects-showcase"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <article className="project-card">
+            <div className="project-card__media" 
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="200"
+            >
+              <a
+                href="https://www.ilciliegiodelletna.it"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/ciliegio_esterno.webp"
+                  alt="Preview of the Il Ciliegio dell'Etna website"
+                  className="project-card__image"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+            </div>
+
+            <div className="project-card__content"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="300"
+            >
+              <h3 className="project-card__title">Il Ciliegio dell'Etna</h3>
+              <p className="project-card__text">
+                <strong>Web design</strong> and <strong>development</strong> for
+                a Sicilian farmhouse resort. A vibrant,{" "}
+                <strong>responsive</strong> layout built with{" "}
+                <strong>Laravel</strong> and <strong>Bootstrap</strong>. I
+                managed the <strong>photo editing</strong> and a{" "}
+                <strong>local SEO</strong> strategy that significantly boosted
+                organic rankings. Features <strong>AOS</strong> animations,{" "}
+                <strong>Font Awesome</strong>, and <strong>carousels</strong> to
+                showcase rooms, restaurant, and event services.
+              </p>
+              <a
+                className="neon-button"
+                href="https://www.ilciliegiodelletna.it"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit website
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
     </>
   );
 }
