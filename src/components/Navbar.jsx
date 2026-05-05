@@ -35,15 +35,21 @@ function NavigationSections({ onNavigate, animated = false }) {
   return (
     <>
       <div className="navbar__intro" {...introAnimationProps}>
-        <p className="navbar__eyebrow">Portfolio</p>
-        <h1 className="navbar__title">Alessandro Michele Piazza</h1>
-        <h2 className="navbar__role">Junior Web Developer</h2>
+        <div className="d-flex gap-3">
+          <img
+            src="public\foto_alessandro_michele_piazza.webp"
+            alt="Foto di Alessandro Michele Piazza"
+            className="img-profilo"
+          />
+          <h1 className="navbar__title">Alessandro Michele Piazza</h1>
+        </div>
+        <h2 className="navbar__role mt-4">Junior Web Developer</h2>
         <p className="navbar__lead">
           Open to new opportunities and collaborations. <br />
           Let&apos;s chat about projects, ideas, or just say hi!
         </p>
       </div>
-
+    
       <div className="menu-container navbar__menu" {...menuAnimationProps}>
         <ul className="custom-menu">
           {NAV_ITEMS.map((item, index) => {
@@ -57,7 +63,11 @@ function NavigationSections({ onNavigate, animated = false }) {
 
             return (
               <li key={item.label}>
-                <a href={item.href} onClick={onNavigate} {...itemAnimationProps}>
+                <a
+                  href={item.href}
+                  onClick={onNavigate}
+                  {...itemAnimationProps}
+                >
                   <span className="nav-indicator"></span>
                   <span className="nav-text">{item.label}</span>
                 </a>
@@ -113,19 +123,18 @@ function NavigationSections({ onNavigate, animated = false }) {
             <span>alexpiazza98@gmail.com</span>
           </a>
 
-          <a
-            className="social-link social-link--contact"
+          <a 
+            className="social-link social-link--contact mb-5"
             href="tel:+393491378265"
             onClick={onNavigate}
           >
-            <i className="bi bi-telephone-fill" aria-hidden="true"></i>
-            <span>+39 349 137 8265</span>
+            <i className="bi bi-telephone-fill " aria-hidden="true"></i>
+            <span >+39 349 137 8265</span>
           </a>
         </div>
       </div>
     </>
-  );
-}
+  );}
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -207,7 +216,9 @@ export default function Navbar() {
         className={`navbar__toggle ${isMenuOpen ? "navbar__toggle--hidden" : ""}`}
         aria-expanded={isMenuOpen}
         aria-controls="mobile-navigation"
-        aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+        aria-label={
+          isMenuOpen ? "Close navigation menu" : "Open navigation menu"
+        }
         onClick={toggleMenu}
       >
         <span className="navbar__toggle-line"></span>
@@ -232,9 +243,11 @@ export default function Navbar() {
                 event.stopPropagation();
               }}
             >
-              <div className="navbar__mobile-header " data-aos="fade-down" data-aos-duration="400">
-                
-
+              <div
+                className="navbar__mobile-header "
+                data-aos="fade-down"
+                data-aos-duration="400"
+              >
                 <button
                   type="button"
                   className="navbar__mobile-close"
@@ -250,7 +263,6 @@ export default function Navbar() {
           </div>
         </div>
       ) : null}
-
     </nav>
   );
 }

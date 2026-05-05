@@ -4,11 +4,11 @@
 
 .homepage__summary-card {
   width: min(100%, 45vw);
-  margin-top: 14vh;
+  margin-top: 10vh;
 }
 
 .homepage__summary-title {
-  margin: 0 0 1.25rem;
+  margin: 0 0 2rem;
   color: var(--white);
   font-size: clamp(1.45rem, 1rem + 1vw, 2rem);
   font-weight: 700;
