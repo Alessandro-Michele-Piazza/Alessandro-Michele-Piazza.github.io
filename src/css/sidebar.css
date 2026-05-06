@@ -234,8 +234,8 @@
   .navbar {
     height: 0;
     min-height: 0;
-    padding: 0; /* ← Aggiungi */
-    margin: 0; /* ← Aggiungi */
+    padding: 0;
+    margin: 0;
   }
 
   .navbar__desktop-panel {
@@ -259,7 +259,7 @@
     border-radius: 999px;
     background: var(--mobile-toggle-background);
     box-shadow: var(--mobile-toggle-shadow);
-    color: var(--teal); /* Aggiungi questo per il colore dell'icona */
+    color: var(--teal);
     backdrop-filter: blur(18px);
     transition:
       opacity 0.38s ease,
@@ -305,7 +305,7 @@
   .navbar__mobile-panel {
     width: 100%;
     min-height: 100vh;
-    padding: 6.25rem 1.5rem 2rem;
+    padding: 5rem 1.5rem 2rem;
     background: var(--mobile-panel-background);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
@@ -317,14 +317,16 @@
     justify-content: space-between;
     gap: 2rem;
     width: 100%;
-    min-height: calc(100vh - 8.25rem);
+    min-height: calc(100vh - 7rem);
   }
 
   .navbar__mobile-header {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
-    gap: 1rem;
+    justify-content: flex-start;
   }
 
   .navbar__mobile-kicker {
@@ -345,7 +347,7 @@
     background-color: var(--icon-link-background);
     color: var(--text-primary);
     box-shadow: var(--surface-shadow);
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 700;
     line-height: 1;
     transition:
@@ -353,6 +355,13 @@
       background-color 0.3s ease,
       color 0.3s ease,
       transform 0.3s ease;
+  }
+
+  .navbar__mobile-close span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
   }
 
   .navbar__mobile-close:hover,
