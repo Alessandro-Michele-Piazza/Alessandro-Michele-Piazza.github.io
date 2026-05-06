@@ -362,6 +362,7 @@
     align-items: center;
     justify-content: center;
     line-height: 1;
+    /* margin-top: -0.4rem; */
   }
 
   .navbar__mobile-close:hover,

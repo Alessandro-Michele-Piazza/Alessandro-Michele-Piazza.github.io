@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { HiMenuAlt3 } from "react-icons/hi";  
+import { HiMenuAlt3 } from "react-icons/hi";
 
 const DESKTOP_MEDIA_QUERY = "(min-width: 768px)";
 const NAV_ITEMS = [
@@ -108,7 +108,7 @@ function NavigationSections({ onNavigate, animated = false }) {
           </a>
         </div>
 
-        <div 
+        <div
           className="navbar__contact-list"
           data-aos={animated ? "fade-up" : undefined}
           data-aos-duration={animated ? "600" : undefined}
@@ -123,8 +123,7 @@ function NavigationSections({ onNavigate, animated = false }) {
             <span>alexpiazza98@gmail.com</span>
           </a>
 
-          
-             <a
+          <a
             className="social-link social-link--contact"
             href="tel:+393491378265"
             onClick={onNavigate}
@@ -135,7 +134,8 @@ function NavigationSections({ onNavigate, animated = false }) {
         </div>
       </div>
     </>
-  );}
+  );
+}
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -147,7 +147,7 @@ export default function Navbar() {
       once: true,
       mirror: false,
       offset: 0,
-      anchorPlacement: 'top-bottom',
+      anchorPlacement: "top-bottom",
     });
   }, []);
 
@@ -254,7 +254,7 @@ export default function Navbar() {
                   onClick={closeMenu}
                   aria-label="Close navigation menu"
                 >
-                  <span aria-hidden="true">×</span>
+                  <i className="bi bi-x-lg" aria-hidden="true"></i>{" "}
                 </button>
               </div>
 
