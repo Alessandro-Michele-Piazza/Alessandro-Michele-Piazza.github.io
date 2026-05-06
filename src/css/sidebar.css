@@ -334,7 +334,7 @@
   }
 
   .navbar__mobile-close {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 2.75rem;

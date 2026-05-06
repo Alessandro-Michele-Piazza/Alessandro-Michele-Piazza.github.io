@@ -13,23 +13,9 @@ const NAV_ITEMS = [
 function NavigationSections({ onNavigate, animated = false }) {
   const introAnimationProps = animated
     ? {
-        "data-aos": "fade-up",
-        "data-aos-duration": "500",
-        "data-aos-delay": "90",
-      }
-    : {};
-  const menuAnimationProps = animated
-    ? {
-        "data-aos": "fade-up",
-        "data-aos-duration": "500",
-        "data-aos-delay": "150",
-      }
-    : {};
-  const footerAnimationProps = animated
-    ? {
-        "data-aos": "fade-up",
-        "data-aos-duration": "500",
-        "data-aos-delay": "300",
+        "data-aos": "fade-down",
+        "data-aos-duration": "600",
+        "data-aos-delay": "0",
       }
     : {};
 
@@ -38,7 +24,7 @@ function NavigationSections({ onNavigate, animated = false }) {
       <div className="navbar__intro" {...introAnimationProps}>
         <div className="d-flex gap-3">
           <img
-            src="./foto_alessandro_michele_piazza.webp" // <--- CORRETTO
+            src="./foto_alessandro_michele_piazza.webp"
             alt="Foto di Alessandro Michele Piazza"
             className="img-profilo"
           />
@@ -50,14 +36,14 @@ function NavigationSections({ onNavigate, animated = false }) {
         </p>
       </div>
 
-      <div className="menu-container navbar__menu" {...menuAnimationProps}>
+      <div className="menu-container navbar__menu">
         <ul className="custom-menu">
           {NAV_ITEMS.map((item, index) => {
             const itemAnimationProps = animated
               ? {
-                  "data-aos": "fade-up",
-                  "data-aos-duration": "500",
-                  "data-aos-delay": `${180 + index * 70}`,
+                  "data-aos": "fade-down",
+                  "data-aos-duration": "600",
+                  "data-aos-delay": `${100 + index * 100}`,
                 }
               : {};
 
@@ -77,7 +63,7 @@ function NavigationSections({ onNavigate, animated = false }) {
         </ul>
       </div>
 
-      <div className="navbar__footer" {...footerAnimationProps}>
+      <div className="navbar__footer">
         <div className="navbar__socials">
           <a
             className="social-link social-link--icon"
@@ -86,6 +72,9 @@ function NavigationSections({ onNavigate, animated = false }) {
             rel="noopener noreferrer"
             aria-label="LinkedIn"
             onClick={onNavigate}
+            data-aos={animated ? "fade-right" : undefined}
+            data-aos-duration={animated ? "600" : undefined}
+            data-aos-delay={animated ? "400" : undefined}
           >
             <i className="bi bi-linkedin" aria-hidden="true"></i>
           </a>
@@ -97,6 +86,9 @@ function NavigationSections({ onNavigate, animated = false }) {
             rel="noopener noreferrer"
             aria-label="GitHub"
             onClick={onNavigate}
+            data-aos={animated ? "fade-right" : undefined}
+            data-aos-duration={animated ? "600" : undefined}
+            data-aos-delay={animated ? "500" : undefined}
           >
             <i className="bi bi-github" aria-hidden="true"></i>
           </a>
@@ -108,12 +100,20 @@ function NavigationSections({ onNavigate, animated = false }) {
             rel="noopener noreferrer"
             aria-label="Instagram"
             onClick={onNavigate}
+            data-aos={animated ? "fade-right" : undefined}
+            data-aos-duration={animated ? "600" : undefined}
+            data-aos-delay={animated ? "600" : undefined}
           >
             <i className="bi bi-instagram" aria-hidden="true"></i>
           </a>
         </div>
 
-        <div className="navbar__contact-list">
+        <div 
+          className="navbar__contact-list"
+          data-aos={animated ? "fade-up" : undefined}
+          data-aos-duration={animated ? "600" : undefined}
+          data-aos-delay={animated ? "700" : undefined}
+        >
           <a
             className="social-link social-link--contact"
             href="mailto:alexpiazza98@gmail.com"
@@ -123,30 +123,31 @@ function NavigationSections({ onNavigate, animated = false }) {
             <span>alexpiazza98@gmail.com</span>
           </a>
 
-          <a
+          
+             <a
             className="social-link social-link--contact"
             href="tel:+393491378265"
             onClick={onNavigate}
           >
-            <i className="bi bi-telephone-fill " aria-hidden="true"></i>
+            <i className="bi bi-telephone-fill" aria-hidden="true"></i>
             <span>+39 349 137 8265</span>
           </a>
         </div>
       </div>
     </>
-  );
-}
+  );}
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     AOS.init({
-      duration: 500,
+      duration: 600,
       easing: "ease-out-cubic",
-      once: false,
+      once: true,
       mirror: false,
       offset: 0,
+      anchorPlacement: 'top-bottom',
     });
   }, []);
 
@@ -243,7 +244,7 @@ export default function Navbar() {
               }}
             >
               <div
-                className="navbar__mobile-header "
+                className="navbar__mobile-header"
                 data-aos="fade-down"
                 data-aos-duration="400"
               >
@@ -253,7 +254,7 @@ export default function Navbar() {
                   onClick={closeMenu}
                   aria-label="Close navigation menu"
                 >
-                  <span aria-hidden="true">X</span>
+                  <span aria-hidden="true">×</span>
                 </button>
               </div>
 
