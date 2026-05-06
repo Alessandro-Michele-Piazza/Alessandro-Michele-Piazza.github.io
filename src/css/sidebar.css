@@ -230,6 +230,84 @@
   object-fit: cover;
 }
 
+@media (min-width: 992px) {
+  .navbar__desktop-panel {
+    padding: clamp(2rem, 3.1vw, 3rem) clamp(1.7rem, 3vw, 2.45rem);
+    gap: clamp(1.6rem, 4.8vh, 3.1rem);
+  }
+
+  .navbar__intro,
+  .navbar__menu,
+  .navbar__footer {
+    width: min(100%, 24rem);
+  }
+
+  .navbar__title {
+    margin-bottom: 0.7rem;
+    font-size: clamp(2rem, 1.65rem + 1.15vw, 3rem);
+    line-height: 0.98;
+  }
+
+  .navbar__role {
+    margin-bottom: 1.15rem;
+    font-size: clamp(0.92rem, 0.86rem + 0.22vw, 1.02rem);
+    letter-spacing: 0.16em;
+  }
+
+  .navbar__lead {
+    font-size: clamp(0.9rem, 0.86rem + 0.16vw, 0.98rem);
+    line-height: 1.65;
+  }
+
+  .custom-menu {
+    gap: 0.85rem;
+  }
+
+  .custom-menu li a {
+    gap: 0.8rem;
+    font-size: clamp(0.68rem, 0.65rem + 0.14vw, 0.78rem);
+    letter-spacing: 0.16em;
+  }
+
+  .nav-indicator {
+    width: 2.2rem;
+  }
+
+  .custom-menu li a:hover .nav-indicator,
+  .custom-menu li a:focus-visible .nav-indicator {
+    width: 3.4rem;
+  }
+
+  .navbar__footer {
+    gap: 1.2rem;
+  }
+
+  .navbar__socials,
+  .navbar__contact-list {
+    gap: 0.75rem;
+  }
+
+  .navbar__contact-list {
+    padding-bottom: 1rem;
+  }
+
+  .social-link--icon {
+    width: 2.6rem;
+    height: 2.6rem;
+    font-size: 1.05rem;
+  }
+
+  .social-link--contact {
+    gap: 0.65rem;
+    font-size: clamp(0.84rem, 0.82rem + 0.12vw, 0.92rem);
+  }
+
+  .img-profilo {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
 @media (max-width: 767.98px) {
   .navbar {
     height: 0;

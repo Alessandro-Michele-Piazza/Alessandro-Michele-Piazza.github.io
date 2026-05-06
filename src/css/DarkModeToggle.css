@@ -235,3 +235,17 @@ body {
   white-space: nowrap;
   border: 0;
 }
+
+@media (min-width: 992px) {
+  .dark-mode-toggle {
+    top: 16px;
+    right: 16px;
+    padding: 0.35rem;
+  }
+
+  .dark-mode-switch {
+    --switch-width: 42px;
+    --switch-height: 18px;
+    --circle-diameter: 28px;
+  }
+}

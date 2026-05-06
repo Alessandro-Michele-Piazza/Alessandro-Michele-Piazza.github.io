@@ -40,6 +40,73 @@
   margin: 0;
 }
 
+@media (min-width: 1024px) {
+  .homepage__summary {
+    height: 100vh;
+    padding: clamp(2.5rem, 4vh, 4rem) clamp(3rem, 6vw, 6.5rem);
+  }
+
+  .homepage__summary-card {
+    width: min(100%, 64rem);
+    margin: 0 auto;
+    min-height: auto;
+    display: grid;
+    align-content: center;
+    gap: 1rem;
+  }
+
+  .homepage__summary-intro {
+    width: min(100%, 42rem);
+    margin: 0 auto 0.35rem;
+  }
+
+  .homepage__summary-eyebrow {
+    margin-bottom: 0.9rem;
+    font-size: 0.82rem;
+    letter-spacing: 0.24em;
+  }
+
+  .homepage__summary-title {
+    font-size: clamp(2.15rem, 1.6rem + 1vw, 2.95rem);
+    line-height: 1.08;
+  }
+
+  .scitta_presentazione {
+    font-size: clamp(1rem, 0.92rem + 0.26vw, 1.14rem);
+    line-height: 1.68;
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1023.98px) {
+  .homepage__summary-card {
+    width: min(100%, 39rem);
+    margin-top: 7.5vh;
+    min-height: 72vh;
+  }
+
+  .homepage__summary-intro {
+    width: min(100%, 38rem);
+    margin-bottom: 2rem;
+  }
+
+  .homepage__summary-eyebrow {
+    margin-bottom: 0.6rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+  }
+
+  .homepage__summary-title {
+    font-size: clamp(1.45rem, 1.15rem + 0.8vw, 2rem);
+  }
+
+  .scitta_presentazione {
+    font-size: clamp(0.92rem, 0.86rem + 0.34vw, 1.08rem);
+    line-height: 1.42;
+  }
+}
+
 @media (max-width: 767.98px) {
   .homepage__summary {
     align-items: stretch;

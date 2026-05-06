@@ -29,6 +29,22 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 100%;
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+@media (min-width: 1400px) {
+  html {
+    font-size: 85%;
+  }
+}
+
 
 
 /* === Sfondo Statico === */
