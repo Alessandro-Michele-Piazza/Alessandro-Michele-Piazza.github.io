@@ -24,7 +24,7 @@ function NavigationSections({ onNavigate, animated = false }) {
       <div className="navbar__intro" {...introAnimationProps}>
         <div className="d-flex gap-3">
           <img
-            src="./foto_alessandro_michele_piazza.webp"
+            src="./Foto_mia_2.webp"
             alt="Foto di Alessandro Michele Piazza"
             className="img-profilo"
           />
