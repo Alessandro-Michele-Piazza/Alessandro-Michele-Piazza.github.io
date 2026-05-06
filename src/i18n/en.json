@@ -1,0 +1,51 @@
+{
+  "Full Stack Web Developer": "Full Stack Web Developer",
+  "About me": "About me",
+  "HTML5": "HTML5",
+  "CSS3": "CSS3",
+  "JavaScript": "JavaScript",
+  "React": "React",
+  "Bootstrap": "Bootstrap",
+  "Tailwind": "Tailwind",
+  "Laravel": "Laravel",
+  "PHP": "PHP",
+  "Git": "Git",
+  "GitHub": "GitHub",
+  "and": "and",
+  "I use": "I use",
+  "Visit website": "Visit website",
+
+  "footer_rights": "All rights reserved.",
+
+  "Professional Summary": "Professional Profile",
+  "Skills & Technologies": "Skills & Technologies",
+  "My projects": "My projects",
+
+  "about_me_1": "I'm Alessandro Michele Piazza, a",
+  "about_me_2": "with a background in Computer Science and a passion for creating modern, scalable web applications.",
+  "about_me_3": "After graduating in 2017 from I.I.S. Fermi-Guttuso, I worked in customer-focused environments. From 2020 to 2024, I was a Receptionist and IT Operator at Il Ciliegio dell'Etna, managing databases and resolving technical issues.",
+  "about_me_4": "In 2025, I completed an intensive 600+ hour bootcamp at Aulab Hackademy, working on real projects as a freelance developer to gain practical experience as a",
+  "about_me_5": ".",
+  "about_me_6": "I've mastered",
+  "about_me_7": "and tools like Microsoft Office, Canva, Trello, and Figma daily.",
+  "about_me_8": "I combine technical skills with adaptability, problem-solving, communication and teamwork developed through customer-facing experience.",
+  "about_me_9": "I'm seeking a full-time position to grow professionally and contribute to innovative web development projects.",
+
+  "about_me_tel_1": "I'm Alessandro Michele Piazza, a",
+  "about_me_tel_2": "passionate about building modern and scalable applications.",
+  "about_me_tel_3": "With a background in Computer Science and an intensive 600+ hour bootcamp at",
+  "about_me_tel_4": ", I've mastered technologies like",
+  "about_me_tel_5": "React, JavaScript, Laravel and PHP",
+  "about_me_tel_6": "I combine technical expertise with strong problem-solving and communication skills gained through years of professional experience.",
+  "about_me_tel_7": "I'm now ready to contribute to innovative projects and grow in a dynamic tech team.",
+
+  "What I work with": "What I work with",
+  "Sottotitolo_skill": "A full-stack toolkit built through hands-on training and real-world projects.",
+
+  "Projects & Experience": "Projects & Experience",
+  "Sottotitolo_projects": "A selection of real projects that demonstrates how I transform design and development into a complete and functional website.",
+  "Descrizione_sito_Ciliegio": "Web design and development for a Sicilian farmhouse resort. A vibrant, responsive layout built with Laravel and Bootstrap. I managed the photo editing and a local SEO strategy that significantly boosted organic rankings. Features AOS animations, Font Awesome, and carousels to showcase rooms, restaurant, and event services.",
+  "Descrizione_sito_Sicilian_Sicily": "Maintenance and feature enhancement for a tourism platform built with React. I integrated a fully functional mailing form, performed extensive bug fixing, and managed professional photo editing to elevate the site's visual impact. Focused on optimizing UI components and ensuring a seamless, high-performance user experience.",
+  "Descrizione_sito_Square_games": "Full-stack gaming platform built with React and Supabase. Integrated the RAWG API for real-time data, implementing SQL triggers for reviews and favorites. Includes user authentication, RLS security, and cloud storage for profiles. Designed with Tailwind CSS and daisyUI for a fully responsive experience.",
+  "Scritta_sidebar": "Open to new opportunities and collaborations."
+}

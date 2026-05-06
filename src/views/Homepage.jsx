@@ -31,7 +31,11 @@ import {
   MdTranslate,
 } from "react-icons/md";
 
+import { useTranslation } from "react-i18next";
+
 export default function Homepage() {
+  const { t } = useTranslation();
+
   return (
     <>
       <section className="homepage__summary d-none d-md-flex flex-column align-items-center justify-content-center">
@@ -41,91 +45,87 @@ export default function Homepage() {
             data-aos="fade-up"
             data-aos-duration="600"
           >
-            <span className="homepage__summary-eyebrow">About me</span>
-            <h2 className="homepage__summary-title">Professional Summary</h2>
+            <span className="homepage__summary-eyebrow">{t("About me")}</span>
+            <h2 className="homepage__summary-title">
+              {t("Professional Summary")}
+            </h2>
           </div>
 
+          {/* Paragrafo 1 */}
           <p
             className="scitta_presentazione"
             data-aos="fade-up"
             data-aos-duration="600"
             data-aos-delay="100"
           >
-            I'm Alessandro Michele Piazza a
+            {t("about_me_1")}{" "}
             <strong className="scritta-bianca">
-              {" "}
-              Full Stack Web Developer{" "}
-            </strong>
-            with a background in Computer Science and a passion for creating
-            modern, scalable web applications.
+              {t("Full Stack Web Developer")}
+            </strong>{" "}
+            {t("about_me_2")}
           </p>
 
+          {/* Paragrafo 2 */}
           <p
             className="scitta_presentazione"
             data-aos="fade-up"
             data-aos-duration="600"
             data-aos-delay="200"
           >
-            After graduating in 2017 from I.I.S. Fermi-Guttuso, I worked in
-            customer-focused environments. From 2020 to 2024, I was a
-            Receptionist and IT Operator at Il Ciliegio dell'Etna, managing
-            databases and resolving technical issues, while also working in
-            retail at Lidl Italia.
+            {t("about_me_3")}
           </p>
 
+          {/* Paragrafo 3 */}
           <p
             className="scitta_presentazione"
             data-aos="fade-up"
             data-aos-duration="600"
             data-aos-delay="300"
           >
-            In 2025, I completed an intensive 600+ hour
+            {t("about_me_4")}{" "}
             <strong className="scritta-bianca">
-              {" "}
-              Full Stack Web Developer{" "}
+              {t("Full Stack Web Developer")}
             </strong>
-            bootcamp at Aulab Hackademy, working on real projects as a freelance
-            developer to gain practical experience.
+            {t("about_me_5")}
           </p>
 
+          {/* Paragrafo 4 (Competenze Tecniche) */}
           <p
             className="scitta_presentazione"
             data-aos="fade-up"
             data-aos-duration="600"
             data-aos-delay="400"
           >
-            I've mastered <strong className="scritta-bianca">HTML5</strong>,{" "}
+            {t("about_me_6")} <strong className="scritta-bianca">HTML5</strong>,{" "}
             <strong className="scritta-bianca">CSS3</strong>,{" "}
             <strong className="scritta-bianca">JavaScript</strong>,{" "}
             <strong className="scritta-bianca">React</strong>,{" "}
             <strong className="scritta-bianca">Bootstrap</strong>,{" "}
             <strong className="scritta-bianca">Tailwind</strong>,{" "}
-            <strong className="scritta-bianca">Laravel</strong> and{" "}
-            <strong className="scritta-bianca">PHP</strong>. I use{" "}
+            <strong className="scritta-bianca">Laravel</strong> {t("and")}{" "}
+            <strong className="scritta-bianca">PHP</strong>. {t("I use")}{" "}
             <strong className="scritta-bianca">Git</strong>,{" "}
-            <strong className="scritta-bianca">GitHub</strong> and tools like
-            Microsoft Office, Canva, Trello, and Figma daily.
+            <strong className="scritta-bianca">GitHub</strong> {t("about_me_7")}
           </p>
 
+          {/* Paragrafo 5 */}
           <p
             className="scitta_presentazione"
             data-aos="fade-up"
             data-aos-duration="600"
             data-aos-delay="500"
           >
-            I combine technical skills with adaptability, problem-solving,
-            communication and teamwork developed through customer-facing
-            experience.
+            {t("about_me_8")}
           </p>
 
+          {/* Paragrafo 6 */}
           <p
             className="scitta_presentazione"
             data-aos="fade-up"
             data-aos-duration="600"
             data-aos-delay="600"
           >
-            I'm seeking a full-time position to grow professionally and
-            contribute to innovative web development projects.
+            {t("about_me_9")}
           </p>
         </article>
       </section>
@@ -137,59 +137,57 @@ export default function Homepage() {
             data-aos="fade-up"
             data-aos-duration="600"
           >
-            <span className="homepage__summary-eyebrow">About me</span>
-            <h2 className="homepage__summary-title">Professional Summary</h2>
+            <span className="homepage__summary-eyebrow">{t("About me")}</span>
+            <h2 className="homepage__summary-title">
+              {t("Professional Summary")}
+            </h2>
           </div>
 
+          {/* Paragrafo 1 */}
           <p
             className="scitta_presentazione text-center"
             data-aos="fade-up"
             data-aos-duration="600"
             data-aos-delay="100"
           >
-            I'm Alessandro Michele Piazza, a
+            {t("about_me_tel_1")}{" "}
             <strong className="scritta-bianca">
-              {" "}
-              Full Stack Web Developer{" "}
-            </strong>
-            passionate about building modern and scalable applications.
+              {t("Full Stack Web Developer")}
+            </strong>{" "}
+            {t("about_me_tel_2")}
           </p>
 
+          {/* Paragrafo 2 */}
           <p
             className="scitta_presentazione text-center"
             data-aos="fade-up"
             data-aos-duration="600"
             data-aos-delay="200"
           >
-            With a background in Computer Science and an intensive 600+ hour
-            bootcamp at
-            <strong className="scritta-bianca"> Aulab Hackademy</strong>, I've
-            mastered technologies like{" "}
-            <strong className="scritta-bianca">
-              React, JavaScript, Laravel and PHP
-            </strong>
-            .
+            {t("about_me_tel_3")}
+            <strong className="scritta-bianca"> Aulab Hackademy</strong>
+            {t("about_me_tel_4")}{" "}
+            <strong className="scritta-bianca">{t("about_me_tel_5")}</strong>.
           </p>
 
+          {/* Paragrafo 3 */}
           <p
             className="scitta_presentazione text-center"
             data-aos="fade-up"
             data-aos-duration="600"
             data-aos-delay="300"
           >
-            I combine technical expertise with strong problem-solving and
-            communication skills gained through years of professional
-            experience.
+            {t("about_me_tel_6")}
           </p>
 
+          {/* Paragrafo 4 */}
           <p
             className="scitta_presentazione text-center"
             data-aos="fade-up"
             data-aos-duration="600"
             data-aos-delay="400"
           >
-            I'm now ready to contribute to innovative projects and grow in a
-            dynamic tech team.
+            {t("about_me_tel_7")}
           </p>
         </article>
       </section>
@@ -200,12 +198,11 @@ export default function Homepage() {
           data-aos="fade-up"
           data-aos-duration="600"
         >
-          <span className="skills__eyebrow">What I work with</span>
-          <h2 className="homepage__skills-title">Skills & Technologies</h2>
-          <p className="skills__subtitle">
-            A full-stack toolkit built through hands-on training and real-world
-            projects.
-          </p>
+          <span className="skills__eyebrow">{t("What I work with")}</span>
+          <h2 className="homepage__skills-title">
+            {t("Skills & Technologies")}
+          </h2>
+          <p className="skills__subtitle">{t("Sottotitolo_skill")}</p>
         </div>
 
         <div className="skills-container">
@@ -332,12 +329,11 @@ export default function Homepage() {
           data-aos="fade-up"
           data-aos-duration="600"
         >
-          <span className="skills__eyebrow">My projects</span>
-          <h2 className="homepage__skills-title">Projects & Experience</h2>
-          <p className="skills__subtitle mx-3">
-            A curated case study that shows how I turn design and development
-            into a polished production-ready experience.
-          </p>
+          <span className="skills__eyebrow">{t("My projects")}</span>
+          <h2 className="homepage__skills-title">
+            {t("Projects & Experience")}
+          </h2>
+          <p className="skills__subtitle mx-3">{t("Sottotitolo_projects")}</p>
         </div>
 
         <div className="projects-showcase aos-overflow-wrapper">
@@ -369,15 +365,7 @@ export default function Homepage() {
             >
               <h3 className="project-card__title">Il Ciliegio dell'Etna</h3>
               <p className="project-card__text">
-                <strong>Web design</strong> and <strong>development</strong> for
-                a Sicilian farmhouse resort. A vibrant,{" "}
-                <strong>responsive</strong> layout built with{" "}
-                <strong>Laravel</strong> and <strong>Bootstrap</strong>. I
-                managed the <strong>photo editing</strong> and a{" "}
-                <strong>local SEO</strong> strategy that significantly boosted
-                organic rankings. Features <strong>AOS</strong> animations,{" "}
-                <strong>Font Awesome</strong>, and <strong>carousels</strong> to
-                showcase rooms, restaurant, and event services.
+                {t("Descrizione_sito_Ciliegio")}
               </p>
               <a
                 className="visit-link visit-link--icon"
@@ -385,7 +373,7 @@ export default function Homepage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Visit website
+                {t("Visit website")}
               </a>
             </div>
           </article>
@@ -418,14 +406,7 @@ export default function Homepage() {
             >
               <h3 className="project-card__title">Sicilian Sicily</h3>
               <p className="project-card__text">
-                <strong>Maintenance</strong> and feature enhancement for a
-                tourism platform built with <strong>React</strong>. I integrated
-                a fully functional <strong>mailing form</strong>, performed
-                extensive <strong>bug fixing</strong>, and managed professional{" "}
-                <strong>photo editing</strong> to elevate the site's visual
-                impact. Focused on optimizing <strong>UI components</strong> and
-                ensuring a seamless, high-performance{" "}
-                <strong>user experience</strong>.
+                {t("Descrizione_sito_Sicilian_Sicily")}
               </p>
               <a
                 className="visit-link visit-link--icon"
@@ -433,7 +414,7 @@ export default function Homepage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Visit website
+                {t("Visit website")}
               </a>
             </div>
           </article>
@@ -466,15 +447,7 @@ export default function Homepage() {
             >
               <h3 className="project-card__title">Square Games</h3>
               <p className="project-card__text">
-                <strong>Full-stack gaming platform</strong> built with{" "}
-                <strong>React</strong> and <strong>Supabase</strong>. Integrated{" "}
-                <strong>RAWG API</strong> for real-time data, implementing{" "}
-                <strong>SQL triggers</strong> for reviews and favorites.
-                Features <strong>user authentication</strong>,{" "}
-                <strong>RLS security</strong>, and{" "}
-                <strong>cloud storage</strong> for profiles. Designed with{" "}
-                <strong>Tailwind CSS</strong> and <strong>daisyUI</strong> for a
-                fully <strong>responsive</strong> experience.
+                {t("Descrizione_sito_Square_games")}
               </p>
               <a
                 className="visit-link visit-link--icon"

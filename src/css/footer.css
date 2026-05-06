@@ -7,6 +7,46 @@
   border-top: 1px solid var(--footer-border);
   text-align: center;
   margin-bottom: 2vh;
+  /* Flexbox per distanziare lingua e copyright */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Stili per il cambio lingua */
+.footer__lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer__lang-btn {
+  background: none;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted); /* Grigio come il tuo testo secondario */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+  letter-spacing: 0.5px;
+}
+
+.footer__lang-btn:hover {
+  color: var(--teal); /* Diventa verde acqua al passaggio */
+}
+
+.footer__lang-btn.active {
+  color: var(--teal); /* Colore principale se la lingua è attiva */
+  border-bottom: 1px solid var(--teal); /* Sottolineatura sottile per l'attiva */
+}
+
+.footer__lang-divider {
+  color: var(--footer-border); /* Usa il colore del bordo per discrezione */
+  font-size: 0.8rem;
+  user-select: none;
 }
 
 .footer-bottom p {

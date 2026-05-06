@@ -2,12 +2,13 @@ import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { HiMenuAlt3 } from "react-icons/hi";
+import { useTranslation } from "react-i18next";
 
 const DESKTOP_MEDIA_QUERY = "(min-width: 768px)";
 const NAV_ITEMS = [
-  { href: "#presentazione", label: "Professional Summary" },
-  { href: "#skills", label: "Skills" },
-  { href: "#projects", label: "Projects" },
+  { href: "#presentazione", labelKey: "Professional Summary" },
+  { href: "#skills", labelKey: "Skills & Technologies" },
+  { href: "#projects", labelKey: "My projects" },
 ];
 
 function NavigationSections({ onNavigate, animated = false }) {
@@ -18,6 +19,8 @@ function NavigationSections({ onNavigate, animated = false }) {
         "data-aos-delay": "0",
       }
     : {};
+
+  const { t } = useTranslation();
 
   return (
     <>
@@ -32,7 +35,7 @@ function NavigationSections({ onNavigate, animated = false }) {
         </div>
         <h2 className="navbar__role mt-4">Junior Web Developer</h2>
         <p className="navbar__lead">
-          Open to new opportunities and collaborations. <br />
+          {t("Scritta_sidebar")} <br />
         </p>
       </div>
 
@@ -48,14 +51,14 @@ function NavigationSections({ onNavigate, animated = false }) {
               : {};
 
             return (
-              <li key={item.label}>
+              <li key={item.href}>
                 <a
                   href={item.href}
                   onClick={onNavigate}
                   {...itemAnimationProps}
                 >
                   <span className="nav-indicator"></span>
-                  <span className="nav-text">{item.label}</span>
+                  <span className="nav-text">{t(item.labelKey)}</span>
                 </a>
               </li>
             );

@@ -1,0 +1,53 @@
+{
+  "Full Stack Web Developer": "Sviluppatore Web Full Stack",
+  "About me": "Su di me",
+  "HTML5": "HTML5",
+  "CSS3": "CSS3",
+  "JavaScript": "JavaScript",
+  "React": "React",
+  "Bootstrap": "Bootstrap",
+  "Tailwind": "Tailwind",
+  "Laravel": "Laravel",
+  "PHP": "PHP",
+  "Git": "Git",
+  "GitHub": "GitHub",
+  "and": "e",
+  "I use": "Utilizzo quotidianamente",
+  "Visit website": "Visita il sito",
+
+  "footer_rights": "Tutti i diritti riservati.",
+
+  "Professional Summary": "Profilo Professionale",
+  "about_me_1": "Sono Alessandro Michele Piazza, uno",
+  "about_me_2": "con un background in Informatica e una passione per la creazione di applicazioni web moderne e responsive.",
+  "about_me_3": "Dopo essermi diplomato nel 2017 presso l'I.I.S. Fermi-Guttuso, ho lavorato in ambienti orientati al cliente. Dal 2020 al 2024, ho ricoperto il ruolo di Receptionist e Operatore IT presso Il Ciliegio dell'Etna, gestendo database e risolvendo problemi tecnici.",
+  "about_me_4": "Nel 2025, ho completato un intensivo bootcamp di oltre 600 ore presso Aulab Hackademy, lavorando su progetti reali come freelance per consolidare le mie competenze come",
+  "about_me_5": ".",
+  "about_me_6": "Ho maturato una solida padronanza di",
+  "about_me_7": "e strumenti come Microsoft Office, Canva, Trello e Figma.",
+  "about_me_8": "Unisco competenze tecniche a doti di adattabilità, problem-solving, comunicazione e lavoro di squadra sviluppate attraverso l'esperienza a contatto con il pubblico.",
+  "about_me_9": "Cerco una posizione a tempo pieno per crescere professionalmente e contribuire a progetti innovativi di sviluppo web.",
+
+  "about_me_tel_1": "Sono Alessandro Michele Piazza, un",
+  "about_me_tel_2": "appassionato della creazione di applicazioni moderne e scalabili.",
+  "about_me_tel_3": "Con un background in Informatica e un bootcamp intensivo di oltre 600 ore presso",
+  "about_me_tel_4": ", ho acquisito padronanza in tecnologie come",
+  "about_me_tel_5": "React, JavaScript, Laravel e PHP",
+  "about_me_tel_6": "Unisco competenze tecniche a solide capacità di problem-solving e comunicazione maturate in anni di esperienza professionale.",
+  "about_me_tel_7": "Sono pronto a contribuire a progetti innovativi e a crescere all'interno di un team tecnologico dinamico.",
+
+  "What I work with": "Con cosa lavoro",
+  "Skills & Technologies": "Competenze Tecniche",
+  "Sottotitolo_skill": "Un set di strumenti full-stack sviluppato attraverso formazione, pratica e progetti reali.",
+
+  "My projects": "I miei progetti",
+  "Projects & Experience": "Progetti & Esperienze",
+  "Sottotitolo_projects": "Una selezione di progetti reali che mostra come trasformo design e sviluppo in un sito web completo e funzionale.",
+  "Descrizione_sito_Ciliegio": "Web design e sviluppo per un agriturismo siciliano. Un layout vibrante e responsive costruito con Laravel e Bootstrap. Ho gestito l'editing delle foto e una strategia SEO locale che ha significativamente migliorato il posizionamento organico. Include animazioni AOS, Font Awesome e caroselli per mostrare camere, ristorante e servizi per eventi.",
+
+  "Descrizione_sito_Sicilian_Sicily": "Manutenzione e miglioramento delle funzionalità per una piattaforma turistica costruita con React. Ho integrato un modulo di invio email completamente funzionante, eseguito una vasta correzione di bug e gestito l'editing professionale delle foto per migliorare l'impatto visivo del sito. Mi sono concentrato sull'ottimizzazione dei componenti UI e sull'assicurare un'esperienza utente fluida e ad alte prestazioni.",
+
+  "Descrizione_sito_Square_games":"Sito a tema videoludico full-stack costruita con React e Supabase. Integrata l'API RAWG per dati in tempo reale, implementando trigger SQL per recensioni e preferiti. Include autenticazione utente, sicurezza RLS e archiviazione cloud per i profili. Progettata con Tailwind CSS e daisyUI per un'esperienza completamente responsive.",
+
+  "Scritta_sidebar":"Aperto a nuove opportunità e collaborazioni."
+}
