@@ -38,8 +38,9 @@ export default function Homepage() {
 
   return (
     <>
+      <span id="presentazione"></span>
       <section className="homepage__summary d-none d-md-flex flex-column align-items-center justify-content-center">
-        <article id="presentazione" className="homepage__summary-card">
+        <article className="homepage__summary-card">
           <div
             className="homepage__summary-intro"
             data-aos="fade-up"
@@ -131,7 +132,7 @@ export default function Homepage() {
       </section>
 
       <section className="homepage__summary d-flex d-md-none flex-column align-items-center justify-content-center">
-        <article id="presentazione-mobile" className="homepage__summary-card">
+        <article className="homepage__summary-card">
           <div
             className="homepage__summary-intro text-center"
             data-aos="fade-up"
