@@ -38,6 +38,59 @@ export default function Homepage() {
 
   return (
     <>
+      <section className="d-block d-md-none d-flex flex-column align-items-center justify-content-center mb-5 homepage__mobile-intro">
+        <div className="mobile-intro">
+          <h1 className="mobile-intro__title">
+            <span className="mobile-intro__name">Alessandro Piazza</span>
+          </h1>
+          <p className="mobile-intro__subtitle">
+            {t("Full Stack Web Developer")}
+          </p>
+        </div>
+        <div>
+          <img
+            src="/Foto_mia_2.webp"
+            alt="Foto di Alessandro Piazza"
+            className="mobile-intro__image"
+            loading="lazy"
+          />
+        </div>
+        <div className="navbar__socials">
+          <a
+            className="social-link social-link--icon"
+            href="https://www.linkedin.com/in/alessandro-michele-piazza-13b751171/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+           
+          >
+            <i className="bi bi-linkedin" aria-hidden="true"></i>
+          </a>
+
+          <a
+            className="social-link social-link--icon"
+            href="https://github.com/Alessandro-Michele-Piazza"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+           
+          >
+            <i className="bi bi-github" aria-hidden="true"></i>
+          </a>
+
+          {/* <a
+            className="social-link social-link--icon"
+            href="https://www.instagram.com/alessandrom.piazza/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            
+          >
+            <i className="bi bi-instagram" aria-hidden="true"></i>
+          </a> */}
+        </div>
+      </section>
+
       <span id="presentazione"></span>
       <section className="homepage__summary d-none d-md-flex flex-column align-items-center justify-content-center">
         <article className="homepage__summary-card">

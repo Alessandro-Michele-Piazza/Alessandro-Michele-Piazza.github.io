@@ -96,7 +96,7 @@ function NavigationSections({ onNavigate, animated = false }) {
             <i className="bi bi-github" aria-hidden="true"></i>
           </a>
 
-          <a
+          {/* <a
             className="social-link social-link--icon"
             href="https://www.instagram.com/alessandrom.piazza/"
             target="_blank"
@@ -108,7 +108,7 @@ function NavigationSections({ onNavigate, animated = false }) {
             data-aos-delay={animated ? "600" : undefined}
           >
             <i className="bi bi-instagram" aria-hidden="true"></i>
-          </a>
+          </a> */}
         </div>
 
         <div
