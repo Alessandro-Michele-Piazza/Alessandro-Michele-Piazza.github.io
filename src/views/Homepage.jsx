@@ -38,7 +38,7 @@ export default function Homepage() {
 
   return (
     <>
-      <section className="d-block d-md-none d-flex flex-column align-items-center justify-content-center mb-5 homepage__mobile-intro">
+      <section className="d-block d-md-none d-flex flex-column align-items-center justify-content-evenly mb-5 homepage__mobile-intro">
         <div className="mobile-intro">
           <h1 className="mobile-intro__title">
             <span className="mobile-intro__name">Alessandro Piazza</span>
