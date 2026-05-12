@@ -49,10 +49,11 @@
   .homepage__summary-card {
     width: min(100%, 64rem);
     margin: 0 auto;
-    min-height: auto;
+    min-height: 70vh;
     display: grid;
     align-content: center;
     gap: 1rem;
+    
   }
 
   .homepage__summary-intro {
@@ -107,7 +108,7 @@
   }
 
   .homepage__summary-card {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -139,6 +140,6 @@
   }
 
   .homepage__summary-card {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 }
