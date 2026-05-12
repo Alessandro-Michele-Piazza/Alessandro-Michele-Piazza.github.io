@@ -112,10 +112,10 @@ export default function Homepage() {
             data-aos-duration="600"
             data-aos-delay="100"
           >
-            {t("about_me_1")}{" "}
+            {t("about_me_1")}
             <strong className="scritta-bianca">
               {t("Full Stack Web Developer")}
-            </strong>{" "}
+            </strong>
             {t("about_me_2")}
           </p>
 
@@ -136,7 +136,7 @@ export default function Homepage() {
             data-aos-duration="600"
             data-aos-delay="300"
           >
-            {t("about_me_4")}{" "}
+            {t("about_me_4")}
             <strong className="scritta-bianca">
               {t("Full Stack Web Developer")}
             </strong>
@@ -150,15 +150,15 @@ export default function Homepage() {
             data-aos-duration="600"
             data-aos-delay="400"
           >
-            {t("about_me_6")} <strong className="scritta-bianca">HTML5</strong>,{" "}
-            <strong className="scritta-bianca">CSS3</strong>,{" "}
-            <strong className="scritta-bianca">JavaScript</strong>,{" "}
-            <strong className="scritta-bianca">React</strong>,{" "}
-            <strong className="scritta-bianca">Bootstrap</strong>,{" "}
-            <strong className="scritta-bianca">Tailwind</strong>,{" "}
-            <strong className="scritta-bianca">Laravel</strong> {t("and")}{" "}
-            <strong className="scritta-bianca">PHP</strong>. {t("I use")}{" "}
-            <strong className="scritta-bianca">Git</strong>,{" "}
+            {t("about_me_6")} <strong className="scritta-bianca">HTML5</strong>,
+            <strong className="scritta-bianca">CSS3</strong>,
+            <strong className="scritta-bianca">JavaScript</strong>,
+            <strong className="scritta-bianca">React</strong>,
+            <strong className="scritta-bianca">Bootstrap</strong>,
+            <strong className="scritta-bianca">Tailwind</strong>,
+            <strong className="scritta-bianca">Laravel</strong> {t("and")}
+            <strong className="scritta-bianca">PHP</strong>. {t("I use")}
+            <strong className="scritta-bianca">Git</strong>,
             <strong className="scritta-bianca">GitHub</strong> {t("about_me_7")}
           </p>
 
@@ -204,10 +204,10 @@ export default function Homepage() {
             data-aos-duration="600"
             data-aos-delay="100"
           >
-            {t("about_me_tel_1")}{" "}
+            {t("about_me_tel_1")}
             <strong className="scritta-bianca">
               {t("Full Stack Web Developer")}
-            </strong>{" "}
+            </strong>
             {t("about_me_tel_2")}
           </p>
 
@@ -220,7 +220,7 @@ export default function Homepage() {
           >
             {t("about_me_tel_3")}
             <strong className="scritta-bianca"> Aulab Hackademy</strong>
-            {t("about_me_tel_4")}{" "}
+            {t("about_me_tel_4")}
             <strong className="scritta-bianca">{t("about_me_tel_5")}</strong>.
           </p>
 
@@ -268,24 +268,24 @@ export default function Homepage() {
             </div>
 
             <ul className="skill-list">
-              <li className="skill-list__item">
+              <li className="skill-list__item mb-2">
                 <FaHtml5 className="skill-icon html" /> <span>HTML5</span>
               </li>
-              <li className="skill-list__item">
+              <li className="skill-list__item mb-2 ">
                 <FaCss3Alt className="skill-icon css" /> <span>CSS3</span>
               </li>
-              <li className="skill-list__item">
+              <li className="skill-list__item mb-2">
                 <FaJs className="skill-icon js" /> <span>JavaScript</span>
               </li>
               <li className="skill-list__item">
                 <FaReact className="skill-icon react" /> <span>React</span>
               </li>
               <li className="skill-list__item">
-                <FaBootstrap className="skill-icon bootstrap" />{" "}
+                <FaBootstrap className="skill-icon bootstrap" />
                 <span>Bootstrap</span>
               </li>
               <li className="skill-list__item">
-                <SiTailwindcss className="skill-icon tailwind" />{" "}
+                <SiTailwindcss className="skill-icon tailwind" />
                 <span>Tailwind</span>
               </li>
             </ul>
@@ -303,7 +303,7 @@ export default function Homepage() {
                 <FaPhp className="skill-icon php" /> <span>PHP</span>
               </li>
               <li className="skill-list__item">
-                <SiLaravel className="skill-icon laravel" />{" "}
+                <SiLaravel className="skill-icon laravel" />
                 <span>Laravel</span>
               </li>
               <li className="skill-list__item">
@@ -320,16 +320,16 @@ export default function Homepage() {
             </div>
 
             <ul className="skill-list">
-              <li className="skill-list__item">
+              <li className="skill-list__item mb-2">
                 <FaGitAlt className="skill-icon git" /> <span>Git</span>
               </li>
-              <li className="skill-list__item">
+              <li className="skill-list__item mb-2">
                 <FaGithub className="skill-icon github" /> <span>GitHub</span>
               </li>
-              <li className="skill-list__item">
+              <li className="skill-list__item mb-2">
                 <SiNpm className="skill-icon npm" /> <span>NPM</span>
               </li>
-              <li className="skill-list__item">
+              <li className="skill-list__item ">
                 <FaFigma className="skill-icon figma" /> <span>Figma</span>
               </li>
               <li className="skill-list__item">
@@ -350,26 +350,26 @@ export default function Homepage() {
 
             <ul className="skill-list">
               <li className="skill-list__item">
-                <MdAutorenew className="soft-skill-icon" />{" "}
+                <MdAutorenew className="soft-skill-icon" />
                 <span>Adaptability</span>
               </li>
               <li className="skill-list__item">
-                <MdLightbulb className="soft-skill-icon" />{" "}
+                <MdLightbulb className="soft-skill-icon" />
                 <span>Problem Solving</span>
               </li>
               <li className="skill-list__item">
-                <MdChat className="soft-skill-icon" />{" "}
+                <MdChat className="soft-skill-icon" />
                 <span>Communication</span>
               </li>
               <li className="skill-list__item">
                 <MdGroups className="soft-skill-icon" /> <span>Teamwork</span>
               </li>
               <li className="skill-list__item">
-                <MdTranslate className="soft-skill-icon" />{" "}
+                <MdTranslate className="soft-skill-icon" />
                 <span>Italian — Native</span>
               </li>
               <li className="skill-list__item">
-                <MdTranslate className="soft-skill-icon" />{" "}
+                <MdTranslate className="soft-skill-icon" />
                 <span>English — B1</span>
               </li>
             </ul>
