@@ -118,7 +118,6 @@
     margin-inline: auto;
     margin-top: 1rem;
     padding-inline: 1.25rem;
-    margin-bottom: 2vh;
   }
 
   .homepage__summary-intro {
@@ -133,5 +132,9 @@
   .scitta_presentazione {
     font-size: clamp(1rem, 4vw, 1.1rem);
     line-height: 1.75;
+  }
+
+  .homepage__summary-card{
+    margin-bottom: 1rem;
   }
 }
