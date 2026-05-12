@@ -33,7 +33,7 @@ function NavigationSections({ onNavigate, animated = false }) {
           />
           <h1 className="navbar__title">Alessandro Michele Piazza</h1>
         </div>
-        <h2 className="navbar__role mt-4">Junior Web Developer</h2>
+        <h2 className="navbar__role mt-4"> Web Developer Full Stack</h2>
         <p className="navbar__lead">
           {t("Scritta_sidebar")} <br />
         </p>
