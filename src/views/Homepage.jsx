@@ -49,7 +49,7 @@ export default function Homepage() {
         </div>
         <div>
           <img
-            src="/Foto_mia_2.webp"
+            src="/foto_mia_3.webp"
             alt="Foto di Alessandro Piazza"
             className="mobile-intro__image"
             loading="lazy"
