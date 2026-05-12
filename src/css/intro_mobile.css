@@ -44,14 +44,19 @@
   background-color: var(--button-primary-hover);
 }
 
-.mobile-intro__image{
+.mobile-intro__image {
     width: 100%;
     max-width: 60vw;
     margin-top: 1rem;
-    background-size: contain;
+    margin-bottom: 3rem;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 3rem;
+    border-radius: 50%;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3),
+                0 4px 12px rgba(0, 0, 0, 0.2),
+                0 0 0 4px rgba(255, 255, 255, 0.05);
+    aspect-ratio: 1 / 1;
 }
 
 .homepage__mobile-intro {
