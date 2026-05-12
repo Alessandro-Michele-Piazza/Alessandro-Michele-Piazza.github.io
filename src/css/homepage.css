@@ -121,15 +121,20 @@
     width: min(100% - 2rem, 42rem);
     max-width: 42rem;
     margin-inline: auto;
-    margin-top: 1rem;
+    margin-top: 0.75rem;
     padding-inline: 1.25rem;
-    height: 70vh;
-    margin-bottom: 0vh;
+    height: auto;
+    min-height: auto;
+    margin-bottom: 1rem;
   }
 
   .homepage__summary-intro {
     width: 100%;
-    margin-bottom: 1.75rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .homepage__summary-eyebrow {
+    margin-bottom: 0.45rem;
   }
 
   .homepage__summary-title {
@@ -139,9 +144,5 @@
   .scitta_presentazione {
     font-size: clamp(1rem, 4vw, 1.1rem);
     line-height: 1.75;
-  }
-
-  .homepage__summary-card {
-    margin-bottom: 2rem;
   }
 }
