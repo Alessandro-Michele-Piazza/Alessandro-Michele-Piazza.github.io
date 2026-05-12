@@ -516,4 +516,9 @@
     flex-wrap: wrap;
     row-gap: 0.35rem;
   }
+
+  .navbar__footer {
+  
+  margin-bottom: 10vh;
+}
 }
