@@ -252,3 +252,15 @@
 }
 
 
+/* INIZIO MEDIA QUERY */
+
+@media screen and (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .skill-card {
+    width: 100%;
+  }
+}
