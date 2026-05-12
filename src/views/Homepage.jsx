@@ -55,7 +55,7 @@ export default function Homepage() {
             loading="lazy"
           />
         </div>
-        <div className="navbar__socials">
+        <div className="navbar__socials mb-2">
           <a
             className="social-link social-link--icon"
             href="https://www.linkedin.com/in/alessandro-michele-piazza-13b751171/"
@@ -68,7 +68,7 @@ export default function Homepage() {
           </a>
 
           <a
-            className="social-link social-link--icon"
+            className="social-link social-link--icon "
             href="https://github.com/Alessandro-Michele-Piazza"
             target="_blank"
             rel="noopener noreferrer"
