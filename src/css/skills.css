@@ -66,7 +66,7 @@
   flex-direction: column;
   text-align: center;
   width: 24vw;
-  height: auto;  
+  height: auto;
 }
 
 .skill-card:hover {
@@ -251,16 +251,31 @@
   transform: scale(1.15);
 }
 
-
 /* INIZIO MEDIA QUERY */
 
 @media screen and (max-width: 768px) {
+  .skill-card {
+    width: 70vw;
+  }
   .skills-container {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
 
-  .skill-card {
-    width: 100%;
+  .skill-list {
+    justify-content: center;
+    
+  }
+
+  .skill-list__item {
+    width: 90%;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .homepage__skills {
+    padding: 0px;
   }
 }
