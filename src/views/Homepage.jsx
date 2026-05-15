@@ -113,8 +113,8 @@ export default function Homepage() {
             data-aos-delay="100"
           >
             {t("about_me_1")}
-            <strong className="scritta-bianca">
-              {t("Full Stack Web Developer")}
+            <strong className="scritta-bianca"> {" "}
+              {t("Full Stack Web Developer")} {" "}
             </strong>
             {t("about_me_2")}
           </p>
@@ -137,7 +137,7 @@ export default function Homepage() {
             data-aos-delay="300"
           >
             {t("about_me_4")}
-            <strong className="scritta-bianca">
+            <strong className="scritta-bianca"> {" "}
               {t("Full Stack Web Developer")}
             </strong>
             {t("about_me_5")}
@@ -152,14 +152,14 @@ export default function Homepage() {
           >
             {t("about_me_6")} <strong className="scritta-bianca">HTML5</strong>,
             <strong className="scritta-bianca">CSS3</strong>,
-            <strong className="scritta-bianca">JavaScript</strong>,
-            <strong className="scritta-bianca">React</strong>,
-            <strong className="scritta-bianca">Bootstrap</strong>,
-            <strong className="scritta-bianca">Tailwind</strong>,
-            <strong className="scritta-bianca">Laravel</strong> {t("and")}
-            <strong className="scritta-bianca">PHP</strong>. {t("I use")}
+            <strong className="scritta-bianca"> JavaScript</strong>,
+            <strong className="scritta-bianca"> React</strong>,
+            <strong className="scritta-bianca"> Bootstrap</strong>,
+            <strong className="scritta-bianca"> Tailwind</strong>,
+            <strong className="scritta-bianca"> Laravel</strong> {t("and ")}
+            <strong className="scritta-bianca">PHP</strong>. {t("I use ")}
             <strong className="scritta-bianca">Git</strong>,
-            <strong className="scritta-bianca">GitHub</strong> {t("about_me_7")}
+            <strong className="scritta-bianca"> GitHub</strong> {t("about_me_7")}
           </p>
 
           {/* Paragrafo 5 */}
