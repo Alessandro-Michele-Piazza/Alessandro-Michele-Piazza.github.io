@@ -91,7 +91,7 @@ export default function Homepage() {
         </div>
       </section>
 
-      <span id="presentazione"></span>
+      <span id="presentazione" />
       <section className="homepage__summary d-none d-md-flex flex-column align-items-center justify-content-center">
         <article className="homepage__summary-card">
           <div
@@ -184,6 +184,8 @@ export default function Homepage() {
         </article>
       </section>
 
+            {/* PROFILO PROFESSIONALE DA TEL PERò */}
+
       <section className="homepage__summary d-flex d-md-none flex-column align-items-center justify-content-center">
         <article className="homepage__summary-card">
           <div
@@ -206,7 +208,7 @@ export default function Homepage() {
           >
             {t("about_me_tel_1")}
             <strong className="scritta-bianca">
-              {t("Full Stack Web Developer")}
+            {" "}   {t("Full Stack Web Developer")} {" "}
             </strong>
             {t("about_me_tel_2")}
           </p>
@@ -221,7 +223,7 @@ export default function Homepage() {
             {t("about_me_tel_3")}
             <strong className="scritta-bianca"> Aulab Hackademy</strong>
             {t("about_me_tel_4")}
-            <strong className="scritta-bianca">{t("about_me_tel_5")}</strong>.
+            <strong className="scritta-bianca"> {" "} {t("about_me_tel_5")}</strong>.
           </p>
 
           {/* Paragrafo 3 */}
