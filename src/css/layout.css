@@ -5,14 +5,6 @@
   background-color: var(--page-background);
 }
 
-@media (min-width: 992px) {
-  .layout {
-    width: min(100%, calc(100vh * 16 / 9));
-    margin-left: 0;
-    margin-right: 10vw;
-  }
-}
-
 .layout__row {
   min-height: 100vh;
   align-items: flex-start;
@@ -29,6 +21,24 @@
 .layout__content {
   min-height: 100vh;
   background-color: transparent;
+}
+
+@media (min-width: 992px) {
+  .layout__row > .layout__sidebar {
+    flex: 0 0 clamp(20rem, 28vw, 34rem);
+    max-width: clamp(20rem, 28vw, 34rem);
+  }
+
+  .layout__row > .layout__content {
+    flex: 1 1 auto;
+    max-width: none;
+    padding-inline: clamp(1.25rem, 2vw, 3rem);
+  }
+
+  .layout__content > section {
+    width: min(100%, 76rem);
+    margin-inline: auto;
+  }
 }
 
 @media (max-width: 767.98px) {
