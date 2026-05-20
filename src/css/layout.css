@@ -5,6 +5,14 @@
   background-color: var(--page-background);
 }
 
+@media (min-width: 992px) {
+  .layout {
+    width: min(100%, calc(100vh * 16 / 9));
+    margin-left: 0;
+    margin-right: 10vw;
+  }
+}
+
 .layout__row {
   min-height: 100vh;
   align-items: flex-start;

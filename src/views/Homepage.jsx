@@ -156,8 +156,8 @@ export default function Homepage() {
             <strong className="scritta-bianca"> React</strong>,
             <strong className="scritta-bianca"> Bootstrap</strong>,
             <strong className="scritta-bianca"> Tailwind</strong>,
-            <strong className="scritta-bianca"> Laravel</strong> {t("and ")}
-            <strong className="scritta-bianca">PHP</strong>. {t("I use ")}
+            <strong className="scritta-bianca"> Laravel</strong> {t("and")}
+            <strong className="scritta-bianca">PHP</strong>. {t("I use")}
             <strong className="scritta-bianca">Git</strong>,
             <strong className="scritta-bianca"> GitHub</strong> {t("about_me_7")}
           </p>
