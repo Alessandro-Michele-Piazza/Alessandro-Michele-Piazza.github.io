@@ -8,7 +8,7 @@ import Footer from "../../components/Footer";
 
 export default function Layout() {
   return (
-    <main className="container-fluid layout px-0">
+    <main className="container-fluid layout">
       <DarkModeToggle />
       <Background />
       <CursorGlow />

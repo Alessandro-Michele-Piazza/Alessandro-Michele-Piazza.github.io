@@ -1,0 +1,27 @@
+/*
+  UltraWide-only overrides
+  - Standard UltraWide: 21:9 class monitors
+  /*
+    UltraWide layout strategy
+    Force a centered 16:9 composition when the monitor ratio is 21:9 or wider
+    (covers both standard UltraWide and Super UltraWide).
+  */
+
+@media screen and (min-width: 1920px) and (min-aspect-ratio: 21/9) {
+  .layout {
+    --ultrawide-frame-width: min(100vw, calc(100vh * (16 / 9)));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .layout__row {
+    width: var(--ultrawide-frame-width);
+    margin-inline: auto;
+  }
+
+  .footer {
+    width: 100%;
+  }
+}
