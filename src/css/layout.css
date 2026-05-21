@@ -3,6 +3,8 @@
   position: relative;
   isolation: isolate;
   background-color: var(--page-background);
+  padding-left: 0px;
+  padding-right:0px;
 }
 
 .layout__row {
