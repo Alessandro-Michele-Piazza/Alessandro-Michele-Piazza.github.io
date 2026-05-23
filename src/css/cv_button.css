@@ -66,6 +66,7 @@
   .CV_button--icon {
     width: fit-content;
     height: fit-content;
+    padding: 0.4rem;
   }
   .CV_button--contact {
     width: 100%;
