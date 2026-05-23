@@ -12,6 +12,11 @@ const NAV_ITEMS = [
   { href: "#projects", labelKey: "My projects" },
 ];
 
+const CV_FILES = {
+  en: "/CV_Alessandro_Piazza_en.pdf",
+  it: "/Cv_Alessandro_Piazza.pdf",
+};
+
 function NavigationSections({ onNavigate, animated = false }) {
   const introAnimationProps = animated
     ? {
@@ -21,7 +26,10 @@ function NavigationSections({ onNavigate, animated = false }) {
       }
     : {};
 
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const activeLanguage = (i18n.resolvedLanguage || i18n.language || "en").split("-")[0];
+  const cvHref = CV_FILES[activeLanguage] || CV_FILES.en;
+  const cvLabel = activeLanguage === "it" ? "Scarica CV" : "Download CV";
 
 
   return (
@@ -100,14 +108,15 @@ function NavigationSections({ onNavigate, animated = false }) {
 
           <a
             className="CV_button CV_button--icon"
-            href="\Cv_Alessandro_Piazza.pdf"
-            aria-label="Download CV"
+            href={cvHref}
+            aria-label={cvLabel}
+            download
             onClick={onNavigate}
             data-aos={animated ? "fade-right" : undefined}
             data-aos-duration={animated ? "600" : undefined}
             data-aos-delay={animated ? "600" : undefined}
           >
-            Download CV
+            {cvLabel}
           </a> 
           
           
