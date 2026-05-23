@@ -1,0 +1,75 @@
+/* --- PROPRIETÀ COMUNI (Hover e Transizioni) --- */
+.CV_button--icon,
+.CV_button--contact {
+  color: var(--text-muted);
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.CV_button--icon:hover,
+.CV_button--icon:focus-visible,
+.CV_button--contact:hover,
+.CV_button--contact:focus-visible {
+  color: var(--teal);
+  transform: translateY(-2px);
+}
+
+/* --- VERSIONE ICONA (Tonda) --- */
+.CV_button--icon {
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+  border: 1px solid var(--icon-link-border);
+  border-radius: 999px;
+  background-color: var(--icon-link-background);
+  box-shadow: var(--surface-shadow);
+  backdrop-filter: blur(8px);
+  font-size: 1.2rem;
+}
+
+.CV_button--icon:hover {
+  border-color: var(--icon-link-hover-border);
+  background-color: var(--icon-link-hover-background);
+}
+
+/* --- VERSIONE CONTATTO (Testo + Icona) --- */
+.CV_button--contact {
+  gap: 0.8rem;
+  width: fit-content;
+  font-size: clamp(0.95rem, 0.92rem + 0.12vw, 1.02rem);
+  font-weight: 500;
+}
+
+.CV_button--contact i {
+  width: 1.2rem;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--teal);
+}
+
+/* --- MEDIA QUERIES --- */
+@media (min-width: 992px) {
+  .CV_button--icon {
+    width: fit-content;
+    padding: 0.5rem;
+    height: fit-content;
+    font-size: 1.05rem;
+  }
+  .CV_button--contact {
+    gap: 0.65rem;
+    font-size: clamp(0.84rem, 0.82rem + 0.12vw, 0.92rem);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .CV_button--icon {
+    width: fit-content;
+    height: fit-content;
+  }
+  .CV_button--contact {
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: 0.35rem;
+  }
+}

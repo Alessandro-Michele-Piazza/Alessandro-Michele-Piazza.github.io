@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "../css/cv_button.css";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { useTranslation } from "react-i18next";
 
@@ -21,6 +22,7 @@ function NavigationSections({ onNavigate, animated = false }) {
     : {};
 
   const { t } = useTranslation();
+
 
   return (
     <>
@@ -96,19 +98,20 @@ function NavigationSections({ onNavigate, animated = false }) {
             <i className="bi bi-github" aria-hidden="true"></i>
           </a>
 
-          {/* <a
-            className="social-link social-link--icon"
-            href="https://www.instagram.com/alessandrom.piazza/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
+          <a
+            className="CV_button CV_button--icon"
+            href="public\Cv_Alessandro_Piazza.pdf"
+            aria-label="Download CV"
             onClick={onNavigate}
             data-aos={animated ? "fade-right" : undefined}
             data-aos-duration={animated ? "600" : undefined}
             data-aos-delay={animated ? "600" : undefined}
           >
-            <i className="bi bi-instagram" aria-hidden="true"></i>
-          </a> */}
+            Download CV
+          </a> 
+          
+          
+
         </div>
 
         <div
