@@ -100,7 +100,7 @@ function NavigationSections({ onNavigate, animated = false }) {
 
           <a
             className="CV_button CV_button--icon"
-            href="public\Cv_Alessandro_Piazza.pdf"
+            href="\Cv_Alessandro_Piazza.pdf"
             aria-label="Download CV"
             onClick={onNavigate}
             data-aos={animated ? "fade-right" : undefined}
