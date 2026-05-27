@@ -46,7 +46,7 @@
 
   "Descrizione_sito_Sicilian_Sicily": "Manutenzione e miglioramento delle funzionalità per una piattaforma turistica costruita con React. Ho integrato un modulo di invio email completamente funzionante, eseguito una vasta correzione di bug e gestito l'editing professionale delle foto per migliorare l'impatto visivo del sito. Mi sono concentrato sull'ottimizzazione dei componenti UI e sull'assicurare un'esperienza utente fluida e ad alte prestazioni.",
 
-  "Descrizione_sito_Square_games":"Sito a tema videoludico full-stack costruita con React e Supabase. Integrata l'API RAWG per dati in tempo reale, implementando trigger SQL per recensioni e preferiti. Include autenticazione utente, sicurezza RLS e archiviazione cloud per i profili. Progettata con Tailwind CSS e daisyUI per un'esperienza completamente responsive.",
+  "Descrizione_sito_Square_games":"Sito a tema videoludico full-stack costruito con React 19 e Supabase. Integrata l'API RAWG per dati in tempo reale, implementando React Router 7 per filtri e caricamento dati. Include autenticazione utente, sicurezza delle tabelle e archiviazione cloud per gli avatar. Progettata in CSS puro per un'interfaccia responsive.",
 
   "Scritta_sidebar":"Aperto a nuove opportunità e collaborazioni."
 }

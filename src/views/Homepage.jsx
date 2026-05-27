@@ -483,12 +483,12 @@ export default function Homepage() {
               data-aos-duration="800"
             >
               <a
-                href="https://github.com/Alessandro-Michele-Piazza/Square-game"
+                href="https://square-game-self.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img
-                  src="/square_games.webp"
+                  src="/square_games_intro.webp"
                   alt="Preview of the Square Games website"
                   className="project-card__image"
                   loading="lazy"
@@ -507,11 +507,11 @@ export default function Homepage() {
               </p>
               <a
                 className="visit-link visit-link--icon"
-                href="https://github.com/Alessandro-Michele-Piazza/Square-game"
+                href="https://square-game-self.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Repository
+               {t("Visit website")}
               </a>
             </div>
           </article>
