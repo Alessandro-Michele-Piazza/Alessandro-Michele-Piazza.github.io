@@ -62,7 +62,6 @@ export default function Homepage() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-           
           >
             <i className="bi bi-linkedin" aria-hidden="true"></i>
           </a>
@@ -73,7 +72,6 @@ export default function Homepage() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-           
           >
             <i className="bi bi-github" aria-hidden="true"></i>
           </a>
@@ -99,10 +97,7 @@ export default function Homepage() {
             data-aos="fade-up"
             data-aos-duration="600"
           >
-            <span className="homepage__summary-eyebrow">{t("About me")}</span>
-            <h2 className="homepage__summary-title">
-              {t("Professional Summary")}
-            </h2>
+            <h2 className="homepage__summary-title">{t("About me")}</h2>
           </div>
 
           {/* Paragrafo 1 */}
@@ -113,8 +108,9 @@ export default function Homepage() {
             data-aos-delay="100"
           >
             {t("about_me_1")}
-            <strong className="scritta-bianca"> {" "}
-              {t("Full Stack Web Developer")} {" "}
+            <strong className="scritta-bianca">
+              {" "}
+              {t("Full Stack Web Developer")}{" "}
             </strong>
             {t("about_me_2")}
           </p>
@@ -137,7 +133,8 @@ export default function Homepage() {
             data-aos-delay="300"
           >
             {t("about_me_4")}
-            <strong className="scritta-bianca"> {" "}
+            <strong className="scritta-bianca">
+              {" "}
               {t("Full Stack Web Developer")}
             </strong>
             {t("about_me_5")}
@@ -150,16 +147,17 @@ export default function Homepage() {
             data-aos-duration="600"
             data-aos-delay="400"
           >
-            {t("about_me_6")} <strong className="scritta-bianca">HTML5</strong>, {" "}
+            {t("about_me_6")} <strong className="scritta-bianca">HTML5</strong>,{" "}
             <strong className="scritta-bianca">CSS3</strong>,
             <strong className="scritta-bianca"> JavaScript</strong>,
             <strong className="scritta-bianca"> React</strong>,
             <strong className="scritta-bianca"> Bootstrap</strong>,
             <strong className="scritta-bianca"> Tailwind</strong>,
-            <strong className="scritta-bianca"> Laravel</strong> {t("and")} {" "}
-            <strong className="scritta-bianca">PHP</strong>. {t("I use")} {" "}
+            <strong className="scritta-bianca"> Laravel</strong> {t("and")}{" "}
+            <strong className="scritta-bianca">PHP</strong>. {t("I use")}{" "}
             <strong className="scritta-bianca">Git</strong>,
-            <strong className="scritta-bianca"> GitHub</strong> {t("about_me_7")}
+            <strong className="scritta-bianca"> GitHub</strong>{" "}
+            {t("about_me_7")}
           </p>
 
           {/* Paragrafo 5 */}
@@ -184,7 +182,7 @@ export default function Homepage() {
         </article>
       </section>
 
-            {/* PROFILO PROFESSIONALE DA TEL PERò */}
+      {/* PROFILO PROFESSIONALE DA TEL PERò */}
 
       <section className="homepage__summary d-flex d-md-none flex-column align-items-center justify-content-center">
         <article className="homepage__summary-card">
@@ -193,9 +191,8 @@ export default function Homepage() {
             data-aos="fade-up"
             data-aos-duration="600"
           >
-            <span className="homepage__summary-eyebrow">{t("About me")}</span>
             <h2 className="homepage__summary-title">
-              {t("Professional Summary")}
+              {t("About me")}
             </h2>
           </div>
 
@@ -208,7 +205,8 @@ export default function Homepage() {
           >
             {t("about_me_tel_1")}
             <strong className="scritta-bianca">
-            {" "}   {t("Full Stack Web Developer")} {" "}
+              {" "}
+              {t("Full Stack Web Developer")}{" "}
             </strong>
             {t("about_me_tel_2")}
           </p>
@@ -223,7 +221,7 @@ export default function Homepage() {
             {t("about_me_tel_3")}
             <strong className="scritta-bianca"> Aulab Hackademy</strong>
             {t("about_me_tel_4")}
-            <strong className="scritta-bianca"> {" "} {t("about_me_tel_5")}</strong>.
+            <strong className="scritta-bianca"> {t("about_me_tel_5")}</strong>.
           </p>
 
           {/* Paragrafo 3 */}
@@ -511,7 +509,7 @@ export default function Homepage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-               {t("Visit website")}
+                {t("Visit website")}
               </a>
             </div>
           </article>
